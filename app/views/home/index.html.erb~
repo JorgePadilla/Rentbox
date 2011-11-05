@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<canvas id="myCanvas" width="130" height="786" style="border:1px solid #c3c3c3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script type="text/javascript">
+
+var c=document.getElementById("myCanvas");
+var cxt=c.getContext("2d");
+cxt.fillStyle="#FD7C16";
+cxt.fillRect(0,0,130,786);
+
+var c=document.getElementById("myCanvas");
+var cxt=c.getContext("2d");
+var img=new Image();
+img.src="rails.pgn";
+cxt.drawImage(img,5,5);
+</script>
+
+</body>
