@@ -1,6 +1,6 @@
 Rentbox::Application.routes.draw do
   get "home/index"
-
+  get "prueba/prueba"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
