@@ -6,13 +6,6 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-
-<body>
-
-<%= yield %>
-
-</body>
-
 <canvas id="myCanvas" width="130" height="786" style="border:1px solid #c3c3c3;">
 Your browser does not support the canvas element.
 </canvas>
@@ -66,4 +59,9 @@ var img=new Image();
 img.src="IN YOUR STORE.gif";
 cxt.drawImage(img,15,350);
 </script>
+<body>
+
+<%= yield %>
+
+</body>
 </html>
