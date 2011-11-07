@@ -3,16 +3,11 @@
 <head>
   <title>Rentbox</title>
   <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag "jquery-1.7.min.js", "application" %>
   <%= csrf_meta_tags %>
 </head>
 
 <body>
-
-<%= yield %>
-
-</body>
-
 <canvas id="myCanvas" width="130" height="786" style="border:1px solid #c3c3c3;">
 Your browser does not support the canvas element.
 </canvas>
@@ -66,4 +61,9 @@ var img6=new Image();
 img6.src="IN YOUR STORE.gif";
 cxt6.drawImage(img6,15,350);
 </script>
+<%= yield %>
+
+</body>
+
+
 </html>
