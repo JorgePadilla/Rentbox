@@ -1,4 +1,6 @@
 Rentbox::Application.routes.draw do
+  get "prueba/index"
+
   get "home/index"
   get "about/index"
   get "privacy_policy/index"
