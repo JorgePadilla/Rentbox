@@ -11,59 +11,58 @@
 <canvas id="myCanvas" width="130" height="786" style="border:1px solid #c3c3c3;">
 Your browser does not support the canvas element.
 </canvas>
+  <script>
+		$(document).ready(function(){
+		var c=document.getElementById("myCanvas");
+		var cxt=c.getContext("2d");
+		cxt.fillStyle="#FD7C16";
+		cxt.fillRect(0,0,130,786);
 
-<script type="text/javascript">
 
-var c=document.getElementById("myCanvas");
-var cxt=c.getContext("2d");
-cxt.fillStyle="#FD7C16";
-cxt.fillRect(0,0,130,786);
+		var cxt=c.getContext("2d");
+		var img=new Image();
+		img.src="Home.gif";
+		cxt.drawImage(img,15,50);
 
+		var c1=document.getElementById("myCanvas");
+		var cxt1=c1.getContext("2d");
+		var img1=new Image();
+		img1.src="How It Works.gif";
+		cxt1.drawImage(img1,15,100);
 
-var cxt=c.getContext("2d");
-var img=new Image();
-img.src="Home.gif";
-cxt.drawImage(img,15,50);
+		var c2=document.getElementById("myCanvas");
+		var cxt2=c2.getContext("2d");
+		var img2=new Image();
+		img2.src="Estrenos.gif";
+		cxt2.drawImage(img2,15,150);
 
-var c1=document.getElementById("myCanvas");
-var cxt1=c1.getContext("2d");
-var img1=new Image();
-img1.src="How It Works.gif";
-cxt1.drawImage(img1,15,100);
+		var c3=document.getElementById("myCanvas");
+		var cxt3=c3.getContext("2d");
+		var img3=new Image();
+		img3.src="Find Store.gif";
+		cxt3.drawImage(img,15,200);
 
-var c2=document.getElementById("myCanvas");
-var cxt2=c2.getContext("2d");
-var img2=new Image();
-img2.src="Estrenos.gif";
-cxt2.drawImage(img2,15,150);
+		var c4=document.getElementById("myCanvas");
+		var cxt4=c4.getContext("2d");
+		var img4=new Image();
+		img4.src="MI CUENTA.gif";
+		cxt4.drawImage(img4,15,250);
 
-var c3=document.getElementById("myCanvas");
-var cxt3=c3.getContext("2d");
-var img3=new Image();
-img3.src="Find Store.gif";
-cxt3.drawImage(img,15,200);
+		var c5=document.getElementById("myCanvas");
+		var cxt5=c5.getContext("2d");
+		var img5=new Image();
+		img5.src="SIGN UP NOW.gif";
+		cxt5.drawImage(img5,15,300);
 
-var c4=document.getElementById("myCanvas");
-var cxt4=c4.getContext("2d");
-var img4=new Image();
-img4.src="MI CUENTA.gif";
-cxt4.drawImage(img4,15,250);
-
-var c5=document.getElementById("myCanvas");
-var cxt5=c5.getContext("2d");
-var img5=new Image();
-img5.src="SIGN UP NOW.gif";
-cxt5.drawImage(img5,15,300);
-
-var c6=document.getElementById("myCanvas");
-var cxt6=c6.getContext("2d");
-var img6=new Image();
-img6.src="IN YOUR STORE.gif";
-cxt6.drawImage(img6,15,350);
+		var c6=document.getElementById("myCanvas");
+		var cxt6=c6.getContext("2d");
+		var img6=new Image();
+		img6.src="IN YOUR STORE.gif";
+		cxt6.drawImage(img6,15,350);
+		});
 </script>
+
 <%= yield %>
 
 </body>
-
-
 </html>
