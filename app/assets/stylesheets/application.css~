@@ -11,4 +11,5 @@ div.barra
   text-align:center;
   height: 786px;
   width: 130px;
+
 }
