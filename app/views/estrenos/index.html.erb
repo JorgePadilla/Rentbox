@@ -1,0 +1,27 @@
+<h1>Listing estrenos</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Sinopsis</th>
+    <th>Clasificacion</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @estrenos.each do |estreno| %>
+  <tr>
+    <td><%= estreno.titulo %></td>
+    <td><%= estreno.sinopsis %></td>
+    <td><%= estreno.clasificacion %></td>
+    <td><%= link_to 'Show', estreno %></td>
+    <td><%= link_to 'Edit', edit_estreno_path(estreno) %></td>
+    <td><%= link_to 'Destroy', estreno, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Estreno', new_estreno_path %>
