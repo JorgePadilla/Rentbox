@@ -11,5 +11,18 @@ div.barra
   text-align:center;
   height: 786px;
   width: 130px;
+}
 
+div.marco
+{
+position:absolute;
+left:130px;
+top:0px;
+
+/*border:1px solid black;*/
+
+min-width:1132px;
+max-width:1132px;
+max-height:790px;
+min-height:790px;
 }

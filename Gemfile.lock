@@ -114,6 +114,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.1.1)
+  coffee-script
   execjs
   jquery-rails
   rails (= 3.1.1)

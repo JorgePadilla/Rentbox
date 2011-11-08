@@ -2,12 +2,13 @@
 <html>
 <head>
   <title>Rentbox</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+<%= stylesheet_link_tag "application" %>
+<%= javascript_include_tag "application" %>
+  
+<%= csrf_meta_tags %>
 </head>
 <div class="barra">
-<img border="0" src="/Home.gif" alt="Home" />
+<img class="home" border="0" src="/Home.gif" alt="Home" />
 <img border="0" src="/Find Store.gif" alt="Find Store" />
 <img border="0" src="/Estrenos.gif" alt="Estrenos" />
 <img border="0" src="/How It Works.gif" alt="How It Works" />
@@ -17,9 +18,9 @@
 </div>
 
 <body>
-<span>
+<div class="marco">
 <%= yield %>
-</span>
+</div>
 </body>
 
 
