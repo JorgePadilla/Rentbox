@@ -12,6 +12,7 @@
 <img border="0" src="/Find Store.gif" alt="Find Store" />
 <img border="0" src="/Estrenos.gif" alt="Estrenos" />
 <img border="0" src="/How It Works.gif" alt="How It Works" />
+<img border="0" src="/How It Works1.gif" alt="How It Works" visible=false />
 <img border="0" src="/IN YOUR STORE.gif" alt="In Your Store" />
 <img border="0" src="/MI CUENTA.gif" alt="Mi Cuenta" />
 <img border="0" src="/SIGN UP NOW.gif" alt="Sign Up Now" />
@@ -20,7 +21,7 @@
 <body>
 <div class="marco">
 <%= yield %>
-<div>
+</div>
 </body>
 
 

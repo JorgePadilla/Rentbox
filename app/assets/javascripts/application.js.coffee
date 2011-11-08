@@ -7,4 +7,4 @@
 
 $ ->
  $('img.home').hover ->
-  $('div.barra').hide()	
+  $('div.barra').replaceWith()
