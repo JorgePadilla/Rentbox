@@ -5,7 +5,7 @@
  *= require_self
  *= require_tree . 
 */
-div.barra > a{
+div > a{
   color: black ;
   text-decoration: none;
   font-family:Helvetica,Arial,sans-serif;
@@ -19,7 +19,6 @@ div.barra > a{
     color: #fff;
     background-color: #fff; } }
   
-
 div.barra
 {
   background-color:#fd7c16;

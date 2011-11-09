@@ -5,8 +5,8 @@
  *= require_self
  *= require_tree . 
 */
-a{
-  color: black ;
+div > a{
+  color: white ;
   text-decoration: none;
   font-family:Helvetica,Arial,sans-serif;
   font-size:11px;
