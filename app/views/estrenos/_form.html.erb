@@ -1,0 +1,29 @@
+<%= form_for(@estreno) do |f| %>
+  <% if @estreno.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@estreno.errors.count, "error") %> prohibited this estreno from being saved:</h2>
+
+      <ul>
+      <% @estreno.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br />
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :sinopsis %><br />
+    <%= f.text_area :sinopsis %>
+  </div>
+  <div class="field">
+    <%= f.label :clasificacion %><br />
+    <%= f.select :clasificacion, {"G" => "G", "PG" => "PG", "PG13" => "PG13", "R" => "R",  "Not Rated" => "Not Rated"} %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

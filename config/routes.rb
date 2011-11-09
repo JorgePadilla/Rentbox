@@ -1,4 +1,6 @@
 Rentbox::Application.routes.draw do
+  resources :estrenos
+
   get "home/index"
   get "about/index"
   get "privacy_policy/index"

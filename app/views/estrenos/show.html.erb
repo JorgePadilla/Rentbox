@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @estreno.titulo %>
+</p>
+
+<p>
+  <b>Sinopsis:</b>
+  <%= @estreno.sinopsis %>
+</p>
+
+<p>
+  <b>Clasificacion:</b>
+  <%= @estreno.clasificacion %>
+</p>
+
+
+<%= link_to 'Edit', edit_estreno_path(@estreno) %> |
+<%= link_to 'Back', estrenos_path %>
