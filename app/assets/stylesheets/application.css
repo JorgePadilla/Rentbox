@@ -23,13 +23,15 @@ div.barra
 {
   background-color:#fd7c16;
   text-align:center;
-  height: 786px;
+  height: 790px;
   width: 130px;
+
   
 }
 img.hidden
 {
   display:none;
+
 }
 div.marco
 {

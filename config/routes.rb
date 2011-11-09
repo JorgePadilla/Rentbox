@@ -1,5 +1,9 @@
 Rentbox::Application.routes.draw do
+
   resources :estrenos
+
+  get "prueba/index"
+
 
   get "home/index"
   get "about/index"

@@ -6,6 +6,11 @@
 
 
 $ ->
+<<<<<<< HEAD
  $('img.how').hover ->
   $('div.barra').hide()	
  
+=======
+ $('img.home').hover ->
+  $('div.barra').replaceWith()
+>>>>>>> jp

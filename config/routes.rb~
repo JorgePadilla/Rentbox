@@ -1,6 +1,12 @@
 Rentbox::Application.routes.draw do
+<<<<<<< HEAD
+  resources :estrenos
+=======
+  get "prueba/index"
+>>>>>>> jp
+
   get "home/index"
-  get "about/index2"
+  get "about/index"
   get "privacy_policy/index"
   get "terms_of_use/index"
   get "mapa/index"

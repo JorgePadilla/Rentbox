@@ -6,6 +6,10 @@
 
 
 $ ->
+<<<<<<< HEAD
  $('img.how').hover ->
+=======
+ $('img.home').hover ->
+>>>>>>> jp
   $('div.barra').hide()	
  $('img.how1').hide()
