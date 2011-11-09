@@ -5,6 +5,4 @@
 #= require_tree .
 
 
-$ ->
- $('img.home').hover ->
-  $('div.barra').hide()	
+

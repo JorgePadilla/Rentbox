@@ -1,5 +1,9 @@
 Rentbox::Application.routes.draw do
+
   resources :estrenos
+
+  get "prueba/index"
+
 
   get "home/index"
   get "about/index"
@@ -9,6 +13,7 @@ Rentbox::Application.routes.draw do
   get "planes_membresia/index"
   get "tutorial/index"
   get "contactenos/index"
+  get "nuestros_kioscos/index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

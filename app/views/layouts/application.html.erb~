@@ -3,24 +3,28 @@
 <head>
   <title>Rentbox</title>
 <%= stylesheet_link_tag "application" %>
-<%= javascript_include_tag "application" %>
-  
+<%= javascript_include_tag "application" %> 
 <%= csrf_meta_tags %>
 </head>
+
 <div class="barra">
-<img class="home" border="0" src="/Home.gif" alt="Home" />
-<img border="0" src="/Find Store.gif" alt="Find Store" />
-<img border="0" src="/Estrenos.gif" alt="Estrenos" />
-<img border="0" src="/How It Works.gif" alt="How It Works" />
-<img border="0" src="/IN YOUR STORE.gif" alt="In Your Store" />
-<img border="0" src="/MI CUENTA.gif" alt="Mi Cuenta" />
-<img border="0" src="/SIGN UP NOW.gif" alt="Sign Up Now" />
+
+<br /><br />
+<br /><br />
+
+  <%= link_to 'INICIO', root_path %><br /><br />
+  <%= link_to 'NUESTROS KIOSCOS',"/nuestros_kioscos/index", root_path %><br /><br />
+  <%= link_to 'ESTRENOS',estreno_path  %><br /><br />
+  <%= link_to 'COMO FUNCIONA', root_path %><br /><br />
+  <%= link_to 'MI CUENTA', root_path %><br /><br />
+  <%= link_to 'PLANES DE MEMBRESIA', "/planes_membresia/index" %>
+
 </div>
 
 <body>
 <div class="marco">
 <%= yield %>
-<div>
+</div>
 </body>
 
 

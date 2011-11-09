@@ -5,19 +5,44 @@
  *= require_self
  *= require_tree . 
 */
+div.barra > a
+{
+  color: white ;
+  text-decoration: none;
+  font-family:Helvetica,Arial,sans-serif;
+  font-size:11px;
+  font-weight:800;
+  opacity:0.9;
+}
+    
+    
+    
+div.barra > a:hover
+{
+   color: white;
+   background-color: black;
+}
+  
 div.barra
 {
   background-color:#fd7c16;
   text-align:center;
-  height: 786px;
+  height: 790px;
   width: 130px;
-}
 
+  
+}
+img.hidden
+{
+  display:none;
+
+}
 div.marco
 {
 position:absolute;
 left:130px;
 top:0px;
+
 
 /*border:1px solid black;*/
 
