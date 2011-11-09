@@ -6,5 +6,6 @@
 
 
 $ ->
- $('img.home').hover ->
+ $('img.how').hover ->
   $('div.barra').hide()	
+ 
