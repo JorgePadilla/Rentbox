@@ -8,8 +8,9 @@
 $ ->
 <<<<<<< HEAD
  $('img.how').hover ->
+  $('div.barra').hide()	
+ 
 =======
  $('img.home').hover ->
+  $('div.barra').replaceWith()
 >>>>>>> jp
-  $('div.barra').hide()	
- $('img.how1').hide()
