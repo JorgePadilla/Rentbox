@@ -1,27 +1,33 @@
-<h1>Listing estrenos</h1>
-
-<table>
-  <tr>
-    <th>Titulo</th>
-    <th>Sinopsis</th>
-    <th>Clasificacion</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<h1>ESTRENOS</h1>
 
 <% @estrenos.each do |estreno| %>
-  <tr>
-    <td><%= estreno.titulo %></td>
-    <td><%= estreno.sinopsis %></td>
-    <td><%= estreno.clasificacion %></td>
-    <td><%= link_to 'Show', estreno %></td>
-    <td><%= link_to 'Edit', edit_estreno_path(estreno) %></td>
-    <td><%= link_to 'Destroy', estreno, confirm: 'Are you sure?', method: :delete %></td>
-  </tr>
+
+<div class="estreno">
+  <div class="info_estreno">
+		<h4><%= estreno.titulo %></h4>
+    <p><%= estreno.sinopsis %></p>
+    <p><b>Clasificacion: </b><%= estreno.clasificacion %></p>
+		<% if estreno.fecha != nil %>
+    <p><b>Fecha: </b><%= estreno.fecha %></p>
+    <% end %>
+  </div>
+
+	<div class="img_estreno">
+		<% if estreno.imagen.exists? then %>
+		<p><%= image_tag estreno.imagen.url(:thumb) %></p>
+		<% else %>
+		<p> No hay imagen relacionada a este estreno.</p>
+		<% end %>
+	</div>
+
+	<div class="links_estreno">
+    <span><%= link_to 'Show', estreno %>|</span>
+    <span><%= link_to 'Edit', edit_estreno_path(estreno) %>|</span>
+    <span><%= link_to 'Destroy', estreno, confirm: 'Are you sure?', method: :delete %></span>
+	</div>
+</div>
 <% end %>
-</table>
-
+<hr />
 <br />
-
-<%= link_to 'New Estreno', new_estreno_path %>
+<%= link_to 'New Estreno', new_estreno_path %> <br />
+<%= link_to 'HOME', root_url %>

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111108063711) do
+ActiveRecord::Schema.define(:version => 20111109070441) do
 
   create_table "estrenos", :force => true do |t|
     t.string   "titulo"
@@ -19,6 +19,11 @@ ActiveRecord::Schema.define(:version => 20111108063711) do
     t.string   "clasificacion"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "imagen_file_name"
+    t.string   "imagen_content_type"
+    t.integer  "imagen_file_size"
+    t.datetime "imagen_updated_at"
+    t.date     "fecha"
   end
 
 end

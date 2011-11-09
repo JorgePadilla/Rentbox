@@ -1,4 +1,4 @@
-<%= form_for(@estreno) do |f| %>
+<%= form_for(@estreno, :html => { :multipart => true }) do |f| %>
   <% if @estreno.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@estreno.errors.count, "error") %> prohibited this estreno from being saved:</h2>
@@ -22,6 +22,15 @@
   <div class="field">
     <%= f.label :clasificacion %><br />
     <%= f.select :clasificacion, {"G" => "G", "PG" => "PG", "PG13" => "PG13", "R" => "R",  "Not Rated" => "Not Rated"} %>
+  </div>
+  <div class="field">
+    <%= f.label :imagen %><br />
+    <%= f.file_field :imagen %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br />
+    <%= f.date_select :fecha, { :start_year => 1990, :end_year => Time.now.year, 
+    :prompt => {:year => 'Año', :month => 'Mes', :day => 'Día'}, :use_month_numbers =>  true, :order => [:year, :month, :day] } %>
   </div>
   <div class="actions">
     <%= f.submit %>
