@@ -1,9 +1,11 @@
 Rentbox::Application.routes.draw do
-<<<<<<< HEAD
+
+  get "nuestros_kioscos/index"
+
   resources :estrenos
-=======
+
   get "prueba/index"
->>>>>>> jp
+
 
   get "home/index"
   get "about/index"

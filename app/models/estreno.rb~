@@ -3,6 +3,6 @@ validates_presence_of :titulo, :message => "El titulo no puede estar en blanco"
 has_attached_file :imagen, :styles => {
   :thumb=> "100x150#",
   :small  => "150x150>"}
-attr_accessible :fecha, :titulo, :clasificacion, :sinopsis, :imagen
+attr_accessible :fecha, :titulo, :clasificacion, :sinopsis
 validates_uniqueness_of :titulo
 end
