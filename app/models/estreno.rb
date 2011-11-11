@@ -4,5 +4,5 @@ class Estreno < ActiveRecord::Base
 	has_attached_file :imagen, :styles => {
 	    				:thumb=> "100x150#",
 	    				:small  => "150x150>"}
-	attr_accessible :fecha
+	
 end
