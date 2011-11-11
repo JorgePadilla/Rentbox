@@ -4,5 +4,4 @@ validates_uniqueness_of :titulo
 has_attached_file :imagen, :styles => {
   :thumb=> "100x150#",
   :small  => "150x150>"}
-attr_accessible :fecha, :titulo, :clasificacion, :sinopsis, :imagen
 end
