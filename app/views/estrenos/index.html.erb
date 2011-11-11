@@ -20,9 +20,13 @@
 <% @estrenos.each do |estreno| %>
 <table align="center">
   <tr valign="bottom"> 
-    <td width="106" height="200" rowspan="3" valign="top">
+    <td width="106" height="200" rowspan="3" valign="top">     
       <div align="center">
+        <% if estreno.imagen.exists? then %>
         <%= image_tag estreno.imagen.url(:thumb) %>
+        <% else %>
+        <p> No hay imagen relacionada a este estreno.</p>
+        <% end %>
       </div>
     </td>
     <td width="371" height="32" align="center" valign="middle" bordercolor="0" bgcolor="#FFCC33">
@@ -32,7 +36,11 @@
     </td>
     <td width="202" height="32" align="center" valign="middle" bgcolor="#FFCC33" class="mybody">
       <div align="center">
-        <strong><%= estreno.fecha %></strong>
+        <% if estreno.fecha != nil %>
+        <b><%= estreno.fecha %></b>
+        <% else %>
+        <b>No posee fecha</b>
+        <% end %>
       </div>
     </td>
     <td width="183" height="32" valign="middle">
@@ -47,6 +55,11 @@
         <div align="left"> 
           <p class="mybody">
             <%= estreno.sinopsis %>
+          </p>
+	<div class="links_estreno">
+    <span><%= link_to 'Show', estreno %>|</span>
+    <span><%= link_to 'Destroy', estreno, confirm: 'Are you sure?', method: :delete %></span>
+	</div>
           </div>
         </td>
       <td height="21" valign="top"><div align="center"> 
@@ -58,14 +71,21 @@
     </tr>
     <tr valign="bottom"> 
       <td height="96" valign="top">
+	<% if estreno.dvd %>
         <p align="center">
           <img src="/estrenos/dvd.gif" width="77" height="34">
         </p>
+	<% end %>
+	<% if estreno.bluray %>
         <p align="center">
-          <img src="/estrenos/bluray.gif" width="77" height="41"></p>
+          <img src="/estrenos/bluray.gif" width="77" height="41">
+	</p>
+	<% end %>
+	<% if estreno.bluray3d %>
         <p align="center">
           <img src="/estrenos/bluray3D.gif" width="77" height="51">
         </p>
+	<% end %>
       </td>
     </tr>
   </table>

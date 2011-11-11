@@ -32,6 +32,18 @@
     <%= f.date_select :fecha, { :start_year => 1990, :end_year => Time.now.year, 
     :prompt => {:year => 'Año', :month => 'Mes', :day => 'Día'}, :use_month_numbers =>  true, :order => [:year, :month, :day] } %>
   </div>
+  <div class="field">
+    <%= f.label :dvd %>
+    <%= f.check_box :dvd %>
+  </div>
+  <div class="field">
+    <%= f.label :bluray %>
+    <%= f.check_box :bluray %>
+  </div>
+  <div class="field">
+    <%= f.label :bluray3d %>
+    <%= f.check_box :bluray3d%>
+  </div>
   <div class="actions">
     <%= f.submit %>
   </div>
