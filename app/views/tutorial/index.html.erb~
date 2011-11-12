@@ -23,6 +23,7 @@
     </td>
   </tr>
 </table>
+<<<<<<< HEAD
 
 <img src="/tutorial/como_funciona.png"/>
 <div style="position:absolute; top:30px; left:100px; width:200px; height:200px; visibility:visible z-index:1">
@@ -31,3 +32,5 @@
 
 
 
+=======
+>>>>>>> 939c0e0b164ad39381e10a1c1afcee77281aa89c
