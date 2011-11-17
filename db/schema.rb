@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111109070441) do
+ActiveRecord::Schema.define(:version => 20111111030955) do
 
   create_table "estrenos", :force => true do |t|
     t.string   "titulo"
@@ -24,6 +24,9 @@ ActiveRecord::Schema.define(:version => 20111109070441) do
     t.integer  "imagen_file_size"
     t.datetime "imagen_updated_at"
     t.date     "fecha"
+    t.boolean  "dvd"
+    t.boolean  "bluray"
+    t.boolean  "bluray3d"
   end
 
 end

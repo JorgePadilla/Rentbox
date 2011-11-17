@@ -12,6 +12,10 @@ Rentbox::Application.routes.draw do
   get "mapa/index"
   get "planes_membresia/index"
   get "tutorial/index"
+  get "tutorial/paso1"
+  get "tutorial/paso2"
+  get "tutorial/paso3"
+  get "tutorial/paso4"
   get "contactenos/index"
   get "nuestros_kioscos/index"
   # The priority is based upon order of creation:

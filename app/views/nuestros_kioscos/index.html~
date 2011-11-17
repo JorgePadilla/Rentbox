@@ -1,12 +1,10 @@
-<!--<table width="65" border="0" align="center" background="/tutorial/laso.gif">
-  <tr>-->
 
-      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<title>jVectorMap-Beispiel</title>
-		
-
+		<link href="jquery.vector-map.css" media="screen" rel="stylesheet" type="text/css" />
+		<script src="jquery-1.7.min.js" type="text/javascript"></script>
+		<script src="jquery.vector-map.js" type="text/javascript"></script>
+		<script src="beispiel_karte.js" type="text/javascript"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				// Einfache Integration
@@ -14,7 +12,7 @@
 					map: "beispiel_karte",
 				}); */
 
-				// Zus√§tzliche Einstellungen
+				// Zus‰tzliche Einstellungen
 				farben = {};
 				farben["kuerzel2"] = "#98BC53";
 			
@@ -39,6 +37,4 @@
 		<div id="karte"></div>
 	</body>
 </html>
-<!--
-   </tr>
-</table> -->
+

@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Rentbox</title>
-<%= stylesheet_link_tag "application" %>
-<%= javascript_include_tag "application" %> 
+<%= stylesheet_link_tag "application","jquery.vector-map.css" %>
+<%= javascript_include_tag "application","jquery-1.7.min.js","jquery.vector-map.js","beispiel_karte.js" %> 
 <%= csrf_meta_tags %>
 </head>
 
@@ -23,10 +23,76 @@
 
 <body>
 <div class="marco">
+
 <%= yield %>
+
+
+<table border=0 cellPadding=0 cellSpacing=0>
+  <TBODY>
+    <TR>
+      <TD height="33"/>
+      <TD align=middle bgcolor="#999999">
+        <div align="center">
+          <span class="mybody">
+            <font face="Arial, Helvetica, sans-serif">
+              <A href="/about/index">
+                <font color="#FFFFFF">
+                  About Us
+                </font>
+              </A>
+                |
+              <A href="/privacy_policy/index">
+                <font color="#FFFFFF">Privacy Policy</font>
+              </A>
+                |
+              <A href="/terms_of_use/index">
+                <font color="#FFFFFF">
+                  Terms of Service
+                </font>
+              </A>
+            </font>
+          </span>
+        </div>
+      </TD>
+    </TR>
+    <TR>
+      <TD width=10 height="49" rowspan="2"/>
+      <TD width=884 height="0" align=middle bgcolor="#E9E9E9">
+        <p align="center" class="copyright">
+          <font face="Arial, Helvetica, sans-serif">
+            Texto
+          </font>
+        </p>
+      </TD>
+      <TD width=10 rowspan="2"/>
+    </TR>
+    <TR>
+      <TD align=middle bgcolor="#E9E9E9">
+        <blockquote>
+          <blockquote>
+            <blockquote>
+              <blockquote>
+                <div align="center">
+                  <p>
+                    <span class="copyright">
+                      Mas texto
+                    </span>
+                  </p>
+                </div>
+              </blockquote>
+            </blockquote>
+          </blockquote>
+        </blockquote>
+      </TD>
+    </TR>
+  </TBODY>
+</TABLE>
+<!-- Fin Parte de abajo -->
+
+
+
 </div>
+
 </body>
-
-
 </html>
 

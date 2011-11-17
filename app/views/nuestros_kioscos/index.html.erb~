@@ -1,1 +1,44 @@
-<img src="/nuestros_kioscos/mapa.png" alt="Mapa" align="center"/>
+<!--<table width="65" border="0" align="center" background="/tutorial/laso.gif">
+  <tr>-->
+
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>jVectorMap-Beispiel</title>
+		<link href="jquery.vector-map.css" media="screen" rel="stylesheet" type="text/css" />
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// Einfache Integration
+				/* $("#karte").vectorMap({
+					map: "beispiel_karte",
+				}); */
+
+				// Zusätzliche Einstellungen
+				farben = {};
+				farben["kuerzel2"] = "#98BC53";
+			
+				$("#karte").vectorMap({
+					map: "beispiel_karte",
+					backgroundColor: "#4E4943",
+					colors: farben,
+					hoverOpacity: 0.7,
+					hoverColor: false
+				});
+			});
+		</script>
+		<style type="text/css">
+			#karte {
+				width:800px;
+				height:600px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="karte"></div>
+	</body>
+</html>
+<!--
+   </tr>
+</table> -->
