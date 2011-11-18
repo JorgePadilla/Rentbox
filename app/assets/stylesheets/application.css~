@@ -19,18 +19,17 @@ div.barra > a
     
 div.barra > a:hover
 {
-   color: black;
-   background-color: red
+   color: white;
+   background-color: black;
 }
   
 div.barra
 {
-  background-color:#fd7c16;
+  background-color: #b51211;
+  position: absolute;
+  height: 100%;
   text-align:center;
-  height: 790px;
   width: 130px;
-
-  
 }
 img.hidden
 {
@@ -40,8 +39,9 @@ img.hidden
 div.marco
 {
 position:absolute;
+height: 100%;
 left:130px;
-top:0px;
+
 
 
 /*border:1px solid black;*/

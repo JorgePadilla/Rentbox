@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 	<head>
 		<title>jVectorMap-Beispiel</title>
-		<link href="jquery.vector-map.css" media="screen" rel="stylesheet" type="text/css" />
+		
 
 		<script type="text/javascript">
 			$(document).ready(function(){
@@ -23,14 +23,22 @@
 					backgroundColor: "#4E4943",
 					colors: farben,
 					hoverOpacity: 0.7,
-					hoverColor: false
+					hoverColor: false,
+					onRegionClick: function(event, code){
+					  if (code == 'Valle') {
+					  //window.location.replace("http://localhost:3000");
+					  window.location.replace("/contactenos/index.html");
+					  
+					  
+					  }
+					},
 				});
 			});
 		</script>
 		<style type="text/css">
 			#karte {
 				width:800px;
-				height:600px;
+				height:550px;
 			}
 		</style>
 	</head>

@@ -6,7 +6,7 @@
 <%= javascript_include_tag "application","jquery-1.7.min.js","jquery.vector-map.js","beispiel_karte.js" %> 
 <%= csrf_meta_tags %>
 </head>
-<!--
+
 <div class="barra">
 
 <br /><br />
@@ -20,7 +20,7 @@
   <%= link_to 'PLANES DE MEMBRESIA', "/planes_membresia/index" %>
 
 </div>
--->
+
 <body>
 <div class="marco">
 
