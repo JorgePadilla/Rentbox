@@ -27,72 +27,95 @@
 <body>
 <div class="marco">
 
-<%= yield %>
 
 
 
 
-<table border=0 cellPadding=0 cellSpacing=0>
-  <TBODY>
-    <TR>
-      <TD height="33"/>
-      <TD align=middle bgcolor="#999999">
-        <div align="center">
-          <span class="mybody">
-            <font face="Arial, Helvetica, sans-serif">
-              <A href="/about/index">
-                <font color="#FFFFFF">
-                  About Us
-                </font>
-              </A>
-                |
-              <A href="/privacy_policy/index">
-                <font color="#FFFFFF">Privacy Policy</font>
-              </A>
-                |
-              <A href="/terms_of_use/index">
-                <font color="#FFFFFF">
-                  Terms of Service
-                </font>
-              </A>
-            </font>
-          </span>
-        </div>
-      </TD>
-    </TR>
-    <TR>
-      <TD width=10 height="49" rowspan="2"/>
-      <TD width=884 height="0" align=middle bgcolor="#E9E9E9">
-        <p align="center" class="copyright">
-          <font face="Arial, Helvetica, sans-serif">
-          </font>
-        </p>
-      </TD>
-      <TD width=10 rowspan="2"/>
-    </TR>
-    <TR>
-      <TD align=middle bgcolor="#E9E9E9">
-        <blockquote>
-          <blockquote>
-            <blockquote>
+<table align="center" border="0" cellspacing="0" cellpadding="0">
+  <!-- Sombra izquierda -->
+  <td width=10 background="/general/sombra_derecha.gif" />
+  <!-- Fin sombra izquierda -->
+  <td>
+
+  <table align="center" border="0" cellspacing="0" cellpadding="0">
+    <!-- Inicio yield -->
+    <tr>
+      <td>
+        <%= yield %>
+      </td>
+    </tr>
+    <!-- Fin yield -->
+
+    <!-- Inicio Parte de abajo -->
+    <tr><td>
+      <table border=0 align="center" border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
+          <TR>
+            <TD height="33"/>
+            <TD align=middle bgcolor="#999999">
+              <div align="center">
+                <span class="mybody">
+                  <font face="Arial, Helvetica, sans-serif">
+                    <A href="/about/index">
+                      <font color="#FFFFFF">
+                        About Us
+                      </font>
+                    </A>
+                      |
+                    <A href="/privacy_policy/index">
+                      <font color="#FFFFFF">Privacy Policy</font>
+                    </A>
+                      |
+                    <A href="/terms_of_use/index">
+                      <font color="#FFFFFF">
+                        Terms of Service
+                      </font>
+                    </A>
+                  </font>
+                </span>
+              </div>
+            </TD>
+          </TR>
+          <TR>
+            <TD height="49" rowspan="2"/>
+            <TD width=884 height="0" align=middle bgcolor="#E9E9E9">
+              <p align="center" class="copyright">
+                <font face="Arial, Helvetica, sans-serif" />
+              </p>
+            </TD>
+            <TD rowspan="2"/>
+          </TR>
+          <TR>
+            <TD align=middle bgcolor="#E9E9E9">
               <blockquote>
-                <div align="center">
-                  <p>
-                    <span class="copyright">
-                      Copyright(c)2011 Grupo Tecnia Corp. All rights reserved.
-                    </span>
-                  </p>
-                </div>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <div align="center">
+                        <p>
+                          <span class="copyright">
+                            Copyright(c)2011 Grupo Tecnia Corp. All rights reserved.
+                          </span>
+                        </p>
+                      </div>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
               </blockquote>
-            </blockquote>
-          </blockquote>
-        </blockquote>
-      </TD>
-    </TR>
-  </TBODY>
-</TABLE>
-<!-- Fin Parte de abajo -->
+            </TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+    </td></tr>
+    <!-- Fin Parte de abajo -->
+  </table>
 
+
+  </td>
+  <!-- Sombra derecha -->
+  <td width=10 background="/general/sombra_izquierda.gif" />
+  <!-- Fin sombra derecha -->
+</table>
 
 
 </div>
