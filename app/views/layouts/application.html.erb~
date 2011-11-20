@@ -12,7 +12,27 @@
 <br /><br />
 <br /><br />
 
-  <%= link_to 'INICIO', root_path %><br /><br />
+
+<a id="storepickermenu0_FindButton" class="jqbutton rb-red rb-medium location-findbutton ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only ui-state-hover" style="font-size: 18px" role="button" aria-disabled="false">
+<span class="ui-button-text">
+<span>
+<cufon class="cufon cufon-canvas" alt="FIND " style="width: 41px; height: 18px">
+<canvas width="54" height="21" style="width: 54px; height: 21px; top: -4px; left: -1px"/>
+<cufontext>FIND </cufontext>
+</cufon>
+<cufon class="cufon cufon-canvas" alt="A " style="width: 17px; height: 18px">
+<canvas width="30" height="21" style="width: 30px; height: 21px; top: -4px; left: -1px"/>
+<cufontext>A </cufontext>
+</cufon>
+<cufon class="cufon cufon-canvas" alt="LOCATION" style="width: 78px; height: 18px">
+<canvas width="84" height="21" style="width: 84px; height: 21px; top: -4px; left: -1px"/>
+<cufontext>
+</cufon>
+</span>
+</span>
+</a>
+
+  <%= link_to 'INICIO', root_path %> <br /> <br />
   <%= link_to 'NUESTROS KIOSCOS',"/nuestros_kioscos/index" %><br /><br />
   <%= link_to 'ESTRENOS',estrenos_path  %><br /><br />
   <%= link_to 'COMO FUNCIONA', "/tutorial/index" %><br /><br />
@@ -25,6 +45,8 @@
 <div class="marco">
 
 <%= yield %>
+
+
 
 
 <table border=0 cellPadding=0 cellSpacing=0>
@@ -60,7 +82,6 @@
       <TD width=884 height="0" align=middle bgcolor="#E9E9E9">
         <p align="center" class="copyright">
           <font face="Arial, Helvetica, sans-serif">
-            Texto
           </font>
         </p>
       </TD>
@@ -75,7 +96,7 @@
                 <div align="center">
                   <p>
                     <span class="copyright">
-                      Mas texto
+                      Copyright(c)2011 Grupo Tecnia Corp. All rights reserved.
                     </span>
                   </p>
                 </div>

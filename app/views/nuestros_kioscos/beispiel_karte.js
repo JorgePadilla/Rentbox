@@ -1,4 +1,4 @@
-$.fn.vectorMap("addMap", "beispiel_karte", {
+$().fn.vectorMap("addMap", "beispiel_karte", {
 	"width": 1024,
 	"height": 800,
 	"pathes": {

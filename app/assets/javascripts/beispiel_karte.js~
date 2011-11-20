@@ -1,5 +1,5 @@
-$.fn.vectorMap("addMap", "beispiel_karte", {
-	"width": 950,
+$().fn.vectorMap("addMap", "beispiel_karte", {
+	"width": 1000,
 	"height": 600,
 	"pathes": {
 		"Santa Rosa de Copán": {
