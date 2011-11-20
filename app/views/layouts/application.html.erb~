@@ -20,12 +20,12 @@
   <%= link_to 'ESTRENOS',estrenos_path  %><br /><br />
   <%= link_to 'COMO FUNCIONA', "/tutorial/index" %><br /><br />
   <%= link_to 'MI CUENTA', root_path %><br /><br />
-  <%= link_to 'PLANES DE MEMBRESIA', "/planes_membresia/index" %>
+  <%= link_to 'PLANES DE'+\n+' MEMBRESIA', "/planes_membresia/index" %>
 
 </div>
 
 <body>
-<div class="marco" align="center">
+<div class="marco" >
 
 <%= yield %>
 

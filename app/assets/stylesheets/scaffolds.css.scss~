@@ -16,7 +16,7 @@ a{
   &:visited {
     color: gray; }
   &:hover {
-    color: #fff;
+    color: black;
     background-color: #fff; } }
 
 p, ol, ul, td {
