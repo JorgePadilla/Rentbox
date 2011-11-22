@@ -1,4 +1,7 @@
 class EstrenosController < ApplicationController
+
+  http_basic_authenticate_with :name => "admin", :password => "secretodeamor", :except => :index
+
   # GET /estrenos
   # GET /estrenos.json
   def index
@@ -76,8 +79,12 @@ class EstrenosController < ApplicationController
     @estreno.destroy
 
     respond_to do |format|
-      format.html { redirect_to estrenos_url }
+      format.html { redirect_to estrenos_admin_path }
       format.json { head :ok }
     end
+  end
+
+  def admin
+    @estrenos = Estreno.all
   end
 end
