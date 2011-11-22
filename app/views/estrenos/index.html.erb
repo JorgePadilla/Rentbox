@@ -16,7 +16,9 @@
       </tr>
     </table>
 
+
 <%= link_to 'HOME', root_url %><br/>
+<%= paginate @estrenos %><br/>
 <% @estrenos.each do |estreno| %>
 <table align="center">
   <tr valign="bottom"> 

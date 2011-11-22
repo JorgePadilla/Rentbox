@@ -4,7 +4,7 @@ class EstrenosController < ApplicationController
   # GET /estrenos
   # GET /estrenos.json
   def index
-    @estrenos = Estreno.all
+    @estrenos = Estreno.order("titulo").page(params[:page]).per(5)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -84,6 +84,6 @@ class EstrenosController < ApplicationController
   end
 
   def admin
-    @estrenos = Estreno.all
+    @estrenos = Estreno.order("titulo").page(params[:page]).per(5)
   end
 end
