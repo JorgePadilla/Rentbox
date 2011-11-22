@@ -16,7 +16,7 @@
       </tr>
     </table>
 
-<%= link_to 'HOME', root_url %><br/>
+<%= link_to 'HOME', root_url %><br />
 <% @estrenos.each do |estreno| %>
 <table align="center">
   <tr valign="bottom"> 
@@ -56,6 +56,10 @@
           <p class="mybody">
             <%= estreno.sinopsis %>
           </p>
+	<div class="links_estreno">
+    <span><%= link_to 'Show', estreno %>|</span>
+    <span><%= link_to 'Destroy', estreno, confirm: 'Are you sure?', method: :delete %></span>
+	</div>
           </div>
         </td>
       <td height="21" valign="top"><div align="center"> 
@@ -93,3 +97,4 @@
 
 <hr />
 <br />
+<%= link_to 'New Estreno', new_estreno_path %> <br />
