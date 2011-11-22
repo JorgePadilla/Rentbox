@@ -1,0 +1,22 @@
+Estrenos posee:
+ -Titulo *
+ -Sinopsis *
+ -Clasificacion *
+ -Imagen *
+ -Fecha *
+ -DVD, Bluray, etc *
+ -Trailer
+
+-19 de Noviembre 2011
++Cosas Pendientes
+->ahmed
+(podes comenzar con esto)
+-(sobre nosotros)->la info te la reenvio al correo
+-terminos de servicio
+-logo
+-inicio(si podes cambiar los cuadros por algo ovalado o algo dif perfect sino dejalo parecido)
+
+
+->jerzon
+-dividir lo admin y lo de cliente
+-usar paginación

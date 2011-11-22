@@ -1,0 +1,131 @@
+<table>
+  <td bgcolor="#99CCFF">
+    <table width="100%" height="40" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr> 
+        <th width="40%" align="center" nowrap background="estrenos/barra.gif" class="Headers">
+          <font color="#FFFFFF"></font>
+        </th>
+        <th width="21%" align="center" valign="middle" nowrap background="estrenos/barra.gif" class="Headers">
+          <div align="center">
+            <font color="#FFFFFF">ESTRENOS</font>
+          </div>
+        </th>
+        <th width="39%" align="center" valign="middle" nowrap background="estrenos/barra.gif" class="Headers">
+          <div align="left"></div>
+        </th>
+      </tr>
+    </table>
+
+
+<% @estrenos.each do |estreno| %>
+<table align="center">
+  <tr valign="bottom"> 
+    <td width="106" height="200" rowspan="3" valign="top">     
+      <div align="center">
+        <% if estreno.imagen.exists? then %>
+        <%= image_tag estreno.imagen.url(:thumb) %>
+        <% else %>
+        <p> No hay imagen relacionada a este estreno.</p>
+        <% end %>
+      </div>
+    </td>
+    <td width="371" height="32" align="center" valign="middle" bordercolor="0" bgcolor="#FFCC33">
+      <div align="center" class="mybody">
+        <strong><%= estreno.titulo %></strong>
+      </div>
+    </td>
+    <td width="202" height="32" align="center" valign="middle" bgcolor="#FFCC33" class="mybody">
+      <div align="center">
+        <% if estreno.fecha != nil %>
+        <b><%= estreno.fecha %></b>
+        <% else %>
+        <b>No posee fecha</b>
+        <% end %>
+      </div>
+    </td>
+    <td width="183" height="32" valign="middle">
+      <div align="center">
+        <a href="http://www.traileraddict.com/emd/39199" target="_blank">
+          <img src="/estrenos/ver_corto.gif" width="80" height="30" border="0" align="absmiddle">
+        </a>
+      </div></td>
+    </tr>
+    <tr valign="bottom"> 
+      <td height="168" colspan="2" rowspan="2" align="center" valign="top" bordercolor="0" class="Synopsis">
+        <div align="left"> 
+          <p class="mybody">
+            <%= estreno.sinopsis %>
+          </p>
+	<div class="links_estreno">
+    <span><%= link_to 'Show', estreno %>|</span>
+    <span><%= link_to 'Destroy', estreno, confirm: 'Are you sure?', method: :delete %></span>
+	</div>
+          </div>
+        </td>
+      <td height="21" valign="top"><div align="center"> 
+          <p class="mybody">
+            <strong><%= estreno.clasificacion %></strong>
+          </p>
+        </div>
+      </td>
+    </tr>
+    <tr valign="bottom"> 
+      <td height="96" valign="top">
+	<% if estreno.dvd %>
+        <p align="center">
+          <img src="/estrenos/dvd.gif" width="77" height="34">
+        </p>
+	<% end %>
+	<% if estreno.bluray %>
+        <p align="center">
+          <img src="/estrenos/bluray.gif" width="77" height="41">
+	</p>
+	<% end %>
+	<% if estreno.bluray3d %>
+        <p align="center">
+          <img src="/estrenos/bluray3D.gif" width="77" height="51">
+        </p>
+	<% end %>
+      </td>
+    </tr>
+  </table>
+<!--
+
+<div class="estreno">
+  <div class="info_estreno">
+		<h4><%= estreno.titulo %></h4>
+    <p><%= estreno.sinopsis %></p>
+    <p><b>Clasificacion: </b><%= estreno.clasificacion %></p>
+		<% if estreno.fecha != nil %>
+    <p><b>Fecha: </b><%= estreno.fecha %></p>
+    <% end %>
+  </div>
+
+	<div class="img_estreno">
+		<% if estreno.imagen.exists? then %>
+		<p><%= image_tag estreno.imagen.url(:thumb) %></p>
+		<% else %>
+		<p> No hay imagen relacionada a este estreno.</p>
+		<% end %>
+	</div>
+
+	<div class="links_estreno">
+    <span><%= link_to 'Show', estreno %>|</span>
+    <span><%= link_to 'Edit', edit_estreno_path(estreno) %>|</span>
+    <span><%= link_to 'Destroy', estreno, confirm: 'Are you sure?', method: :delete %></span>
+	</div>
+</div>
+
+
+-->
+
+
+<% end %>
+  </td>
+</table>
+
+
+<hr />
+<br />
+<%= link_to 'New Estreno', new_estreno_path %> <br />
+<%= link_to 'HOME', root_url %>

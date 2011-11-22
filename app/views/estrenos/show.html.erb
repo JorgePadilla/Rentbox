@@ -1,0 +1,61 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @estreno.titulo %>
+</p>
+
+<p>
+  <b>Sinopsis:</b>
+  <%= @estreno.sinopsis %>
+</p>
+
+<p>
+  <b>Clasificacion:</b>
+  <%= @estreno.clasificacion %>
+</p>
+
+<% if @estreno.fecha != nil %>
+<p><b>Fecha: </b><%= @estreno.fecha %></p>
+<% else %>
+<p>No hay fecha relacionada, por favor ingrese fecha</p>
+<% end %>
+
+
+<% if @estreno.imagen.exists? then %>
+<p><b>Thumb:</b></p>
+<p><%= image_tag @estreno.imagen.url(:thumb) %></p>
+<!--<p>Small:<%= image_tag @estreno.imagen.url(:small) %></p>-->
+<% else %>
+<p> No hay imagen relacionada a este estreno, por favor suba una imagen. </p>
+<% end %>
+
+<p>
+  <b>DVD:</b>
+  <% if @estreno.dvd %> 
+    <span>SI</span> 
+  <% else %>
+    <span>NO</span> 
+  <% end %>
+</p>
+
+<p>
+  <b>Bluray:</b>
+  <% if @estreno.bluray %> 
+    <span>SI</span> 
+  <% else %>
+    <span>NO</span> 
+  <% end %>
+</p>
+
+<p>
+  <b>Bluray3D:</b>
+  <% if @estreno.bluray3d %> 
+    <span>SI</span> 
+  <% else %>
+    <span>NO</span> 
+  <% end %>
+</p>
+
+<%= link_to 'Edit', edit_estreno_path(@estreno) %> |
+<%= link_to 'Back', estrenos_path %>

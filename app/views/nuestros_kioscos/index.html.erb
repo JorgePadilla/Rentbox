@@ -1,0 +1,52 @@
+<!--<table width="65" border="0" align="center" background="/tutorial/laso.gif">
+  <tr>-->
+
+      <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>jVectorMap-Beispiel</title>
+		
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// Einfache Integration
+				/* $("#karte").vectorMap({
+					map: "beispiel_karte",
+				}); */
+
+				// Zusätzliche Einstellungen
+				farben = {};
+				farben["kuerzel2"] = "#db2e34";
+			
+				$("#karte").vectorMap({
+					map: "beispiel_karte",
+					backgroundColor: "white",
+					colors: farben,
+					hoverOpacity: 5.7,
+					hoverColor: "#e50000",
+					onRegionClick: function(event, code){
+					  if (code == 'Cortes') {
+					  //window.location.replace("http://localhost:3000");
+					  window.location.replace("/cortes/index.html");
+					  
+					  
+					  }
+					},
+				});
+			});
+		</script>
+		<style type="text/css">
+			#karte {
+				width:885px;
+				height:550px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="karte"></div>
+	</body>
+</html>
+<!--
+   </tr>
+</table> -->

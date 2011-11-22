@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rentbox</title>
+<%= stylesheet_link_tag "application","jquery.vector-map.css" %>
+<%= javascript_include_tag "application","jquery-1.7.min.js","jquery.vector-map.js","beispiel_karte.js" %> 
+<%= csrf_meta_tags %>
+</head>
+
+<div class="barra" >
+
+<br /><br />
+<br /><br />
+
+
+
+<span class="btn">
+  <%= link_to 'INICIO', root_path %> <br /> <br />
+</span>
+  <%= link_to 'NUESTROS KIOSCOS',"/nuestros_kioscos/index" %><br /><br />
+  <%= link_to 'ESTRENOS',estrenos_path  %><br /><br />
+  <%= link_to 'COMO FUNCIONA', "/tutorial/index" %><br /><br />
+  <%= link_to 'MI CUENTA', root_path %><br /><br />
+  <%= link_to 'PLANES DE MEMBRESIA', "/planes_membresia/index" %>
+
+</div>
+
+<body>
+<div class="marco" >
+
+
+
+
+
+<table align="center" border="0" cellspacing="0" cellpadding="0">
+  <!-- Sombra izquierda -->
+  <td width=10 background="/general/sombra_derecha.gif" />
+  <!-- Fin sombra izquierda -->
+  <td>
+
+  <table align="center" border="0" cellspacing="0" cellpadding="0">
+    <!-- Inicio yield -->
+    <tr>
+      <td>
+        <%= yield %>
+      </td>
+    </tr>
+    <!-- Fin yield -->
+
+    <!-- Inicio Parte de abajo -->
+    <tr><td>
+      <table border=0 align="center" border="0" cellspacing="0" cellpadding="0" id="footer">
+        <TBODY>
+          <TR>
+            <TD height="33"/>
+            <TD align=middle bgcolor="#999999">
+              <div align="center">
+                <span class="mybody">
+                  <font face="Arial, Helvetica, sans-serif">
+                    <A href="/about/index">
+                      <font color="#FFFFFF">
+                        About Us
+                      </font>
+                    </A>
+                      |
+                    <A href="/privacy_policy/index">
+                      <font color="#FFFFFF">Privacy Policy</font>
+                    </A>
+                      |
+                    <A href="/terms_of_use/index">
+                      <font color="#FFFFFF">
+                        Terms of Service
+                      </font>
+                    </A>
+                  </font>
+                </span>
+              </div>
+            </TD>
+          </TR>
+          <TR>
+            <TD height="0" rowspan="2"/>
+            <TD width=884 height="0" align=middle >
+              
+            </TD>
+            <TD rowspan="2"/>
+          </TR>
+          <TR>
+            <TD align=middle id="footer">
+              <blockquote>
+                <blockquote>
+                  <blockquote>
+                    <blockquote>
+                      <div align="center">
+                        <p>
+                          <span class="copyright">
+                            Copyright(c)2011 Grupo Tecnia Corp. All rights reserved.
+                          </span>
+                        </p>
+                      </div>
+                    </blockquote>
+                  </blockquote>
+                </blockquote>
+              </blockquote>
+            </TD>
+          </TR>
+        </TBODY>
+      </TABLE>
+    </td></tr>
+    <!-- Fin Parte de abajo -->
+  </table>
+
+
+
+  </td>
+  <!-- Sombra derecha -->
+  <td width=10 background="/general/sombra_izquierda.gif" />
+  <!-- Fin sombra derecha -->
+</table>
+
+
+</div>
+
+</body>
+</html>
+

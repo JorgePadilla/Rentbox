@@ -1,0 +1,36 @@
+
+<img src="/tutorial/como_funciona.png" />
+<table width="65" border="0" align="center" background="/tutorial/laso.gif">
+  <tr>
+    <td>
+      <table width="700" height="550" border="0" align="center">
+        <tr> 
+          <td width="350" height="275" align="center" valign="middle">
+            <a href="Seleccione_un_titulo.htm"><img src="/tutorial/paso1.gif" width="350" height="275" border="0"></a>
+          </td>
+          <td width="350" height="275"><a href="Pase%20su%20tarjeta.htm"><img src="/tutorial/paso2.gif" width="350" height="275" border="0"></a>
+          </td>
+        </tr>
+        <tr> 
+          <td width="350" height="275">
+            <a href="Devolever_DVD.htm"><img src="/tutorial/paso3.gif" width="350" height="275" border="0"></a>
+          </td>
+          <td width="350" height="275">
+            <a href="Coger_DVD.htm"><img src="/tutorial/paso4.gif" width="350" height="275" border="0"></a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<<<<<<< HEAD
+
+<img src="/tutorial/como_funciona.png"/>
+<div style="position:absolute; top:30px; left:100px; width:200px; height:200px; visibility:visible z-index:1">
+  <img src="laso.gif" border=0>
+</div>
+
+
+
+=======
+>>>>>>> 939c0e0b164ad39381e10a1c1afcee77281aa89c
