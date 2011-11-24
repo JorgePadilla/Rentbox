@@ -14,7 +14,7 @@ div.barra > a
   font-weight:800;
   opacity:0.9;
   
-  
+div
 
 }
 a{
@@ -30,7 +30,13 @@ a{
   &:hover {
     color: black;
     } }   
-    
+
+div.space
+{
+
+
+margin-left:260px;  
+}
     
 div.barra > a:hover
 {
@@ -40,13 +46,14 @@ font-size:12px;
   
 div.barra
 {
-  background-color: #b51211;
+  background-color: #b62006;
 
   position: absolute;
   height: 100%;
   text-align:center;
-  width: 122px;
-  
+  width: 173px;
+  padding-top:20px;
+
 
 }
 
@@ -57,13 +64,14 @@ img.hidden
 }
 div.marco
 {
-position:absolute;
+position:relative;
 height: 100%;
 left:122px;
 
 
 width: 100%
 align: center;
+
 /*min-width:1132px;
 max-width:1132px;*/
 

@@ -1,54 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
+
   <title>Rentbox</title>
 <%= stylesheet_link_tag "application","jquery.vector-map.css" %>
-<%= javascript_include_tag "application","jquery-1.7.min.js","jquery.vector-map.js","beispiel_karte.js" %> 
+<%= javascript_include_tag "application","jquery-1.7.min.js","jquery.vector-map.js","beispiel_karte.js","menu.js"%> 
 <%= csrf_meta_tags %>
 </head>
 
-<div class="barra" >
+<div class="barra">
 
+<a href= root_path>
+ <img src="/Mascota.png" />
+
+
+<%= link_to 'Inicio', root_path %> <br /> <br />
 <br /><br />
 <br /><br />
 
-
-
-<span class="btn">
-  <%= link_to 'INICIO', root_path %> <br /> <br />
-</span>
-  <%= link_to 'NUESTROS KIOSCOS',"/nuestros_kioscos/index" %><br /><br />
-  <%= link_to 'ESTRENOS',estrenos_path  %><br /><br />
-  <%= link_to 'COMO FUNCIONA', "/tutorial/index" %><br /><br />
-  <%= link_to 'MI CUENTA', root_path %><br /><br />
-  <%= link_to 'PLANES DE MEMBRESIA', "/planes_membresia/index" %>
-
+  <%= link_to 'Nuestros kioscos',"/nuestros_kioscos/index" %><br /><br />
+  <%= link_to 'Estrenos',estrenos_path  %><br /><br />
+  <%= link_to 'Como funciona', "/tutorial/index" %><br /><br />
+  <%= link_to 'Mi cuenta', "http://rentbox.dvmatic.com" %><br /><br />
+  <%= link_to 'Planes de membresía', "/planes_membresia/index" %>
 </div>
+<!--<form>
+<div id="menu" >
+    <ul class="menu">
+    <br/>
+        <li><span> <%= link_to 'Inicio', root_path %> </span></li>
+	<br/>
+	<li><span> <%= link_to 'Nuestros kioscos',"/nuestros_kioscos/index" %> </span></li>
+	<br/>
+	<li><span> <%= link_to 'Estrenos',estrenos_path  %> </span></li>
+	<br/>
+	<li><span> <%= link_to 'Como funciona', "/tutorial/index" %> </span></li>
+	<br/>
+	<li><span> <%= link_to 'Mi cuenta', "http://rentbox.dvmatic.com" %> </span></li>
+	<br/>
+	<li><span> <%= link_to 'Planes de membresía', "/planes_membresia/index" %> </span></li> 
+     <br/>
+    </ul>
+</div>
+</form>-->
 
-<body>
-<div class="marco" >
-
-
-
-
-
-<table align="center" border="0" cellspacing="0" cellpadding="0">
+<div class="space"  >
+<table  border="0" cellspacing="0" cellpadding="0"   >
   <!-- Sombra izquierda -->
   <td width=10 background="/general/sombra_derecha.gif" />
   <!-- Fin sombra izquierda -->
   <td>
 
   <table align="center" border="0" cellspacing="0" cellpadding="0">
+        <TBODY>
     <!-- Inicio yield -->
+    <tr>
+      <td width="882">
+        <img src="/rentbox2.svg"/>
+      </td>
+    </tr>
+    <tr>
+      <td width="882" bgcolor="#000000">
+        <img src="/general/cinta.gif"/>
+          <br/><br/><br/><br/>
+        <img src="/general/cinta.gif"/>
+      </td>
+    </tr>
     <tr>
       <td>
         <%= yield %>
+	<img src="/general/cinta.gif"/>
       </td>
     </tr>
     <!-- Fin yield -->
 
     <!-- Inicio Parte de abajo -->
-    <tr><td>
+    <tr>
+      <td>
       <table border=0 align="center" border="0" cellspacing="0" cellpadding="0" id="footer">
         <TBODY>
           <TR>
@@ -94,6 +122,7 @@
                         <p>
                           <span class="copyright">
                             Copyright(c)2011 Grupo Tecnia Corp. All rights reserved.
+			    <div class= "hide" id="copyright">Copyright &copy; 2011 <a href="http://apycom.com/">Apycom jQuery Menus</a></div>
                           </span>
                         </p>
                       </div>
@@ -115,11 +144,15 @@
   <!-- Sombra derecha -->
   <td width=10 background="/general/sombra_izquierda.gif" />
   <!-- Fin sombra derecha -->
+        </TBODY>
 </table>
+</div>
 
 
 </div>
-
 </body>
+
+
+
 </html>
 

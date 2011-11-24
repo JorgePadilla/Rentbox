@@ -20,7 +20,7 @@
 			
 				$("#karte").vectorMap({
 					map: "beispiel_karte",
-					backgroundColor: "#98BC53",
+					backgroundColor: "white",
 					colors: farben,
 					hoverOpacity: 5.7,
 					hoverColor: "#e50000",
@@ -38,7 +38,7 @@
 		<style type="text/css">
 			#karte {
 				width:885px;
-				height:550px;
+				height:540px;
 			}
 		</style>
 	</head>

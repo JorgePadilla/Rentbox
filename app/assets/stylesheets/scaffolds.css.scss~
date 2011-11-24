@@ -3,9 +3,10 @@ body {
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
-  line-height: 18px; }
+  line-height: 18px; 
+  margin-left: 122px;}
 
-a{
+/*a{
   color: black ;
   text-decoration: none;
   font-family:Helvetica,Arial,sans-serif;
@@ -17,7 +18,7 @@ a{
     color: gray; }
   &:hover {
     color: black;
-    background-color: #fff; } }
+    background-color: #fff; } }*/
 
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;

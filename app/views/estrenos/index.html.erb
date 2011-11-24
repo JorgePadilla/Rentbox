@@ -17,6 +17,8 @@
     </table>
 
 
+<%= link_to 'HOME', root_url %><br/>
+<%= paginate @estrenos %><br/>
 <% @estrenos.each do |estreno| %>
 <table align="center">
   <tr valign="bottom"> 
@@ -56,10 +58,6 @@
           <p class="mybody">
             <%= estreno.sinopsis %>
           </p>
-	<div class="links_estreno">
-    <span><%= link_to 'Show', estreno %>|</span>
-    <span><%= link_to 'Destroy', estreno, confirm: 'Are you sure?', method: :delete %></span>
-	</div>
           </div>
         </td>
       <td height="21" valign="top"><div align="center"> 
@@ -89,36 +87,6 @@
       </td>
     </tr>
   </table>
-<!--
-
-<div class="estreno">
-  <div class="info_estreno">
-		<h4><%= estreno.titulo %></h4>
-    <p><%= estreno.sinopsis %></p>
-    <p><b>Clasificacion: </b><%= estreno.clasificacion %></p>
-		<% if estreno.fecha != nil %>
-    <p><b>Fecha: </b><%= estreno.fecha %></p>
-    <% end %>
-  </div>
-
-	<div class="img_estreno">
-		<% if estreno.imagen.exists? then %>
-		<p><%= image_tag estreno.imagen.url(:thumb) %></p>
-		<% else %>
-		<p> No hay imagen relacionada a este estreno.</p>
-		<% end %>
-	</div>
-
-	<div class="links_estreno">
-    <span><%= link_to 'Show', estreno %>|</span>
-    <span><%= link_to 'Edit', edit_estreno_path(estreno) %>|</span>
-    <span><%= link_to 'Destroy', estreno, confirm: 'Are you sure?', method: :delete %></span>
-	</div>
-</div>
-
-
--->
-
 
 <% end %>
   </td>
@@ -127,5 +95,3 @@
 
 <hr />
 <br />
-<%= link_to 'New Estreno', new_estreno_path %> <br />
-<%= link_to 'HOME', root_url %>
