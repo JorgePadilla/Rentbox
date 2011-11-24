@@ -14,8 +14,3 @@ a{
     color: #b51211 ; }
   &:hover {
     color: #800000 ; } }
-
-strong{
-color:#ffffff;
-  
-}

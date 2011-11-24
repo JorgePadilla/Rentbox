@@ -56,13 +56,23 @@
     <!-- Inicio yield -->
     <tr>
       <td width="882">
-        <img src="/rentbox2.svg"/>
+        <img src="/rentbox3.svg"/>
       </td>
     </tr>
     <tr>
       <td width="882" bgcolor="#000000">
         <img src="/general/cinta.gif"/>
-          <br/><br/><br/><br/>
+
+<div id="imageScroller">
+				<div id="viewer" class="js-disabled">
+					<a class="wrapper" href="http://www.apple.com" title="Apple"><img class="logo" id="apple" src="/logos/apple.jpg" alt="Apple"></a>
+					<a class="wrapper" href="http://mozilla-europe.org/en/firefox" title="Firefox"><img class="logo" id="firefox" src="/logos/firefox.jpg" alt="Firefox"></a>
+					<a class="wrapper" href="http://jquery.com" title="jQuery"><img class="logo" id="jquery" src="/logos/jquery.jpg" alt="jQuery"></a>
+					<a class="wrapper" href="http://twitter.com" title="Twitter"><img class="logo" id="twitter" src="/logos/twitter.jpg" alt="Twitter"></a>
+					<a class="wrapper" href="http://jqueryui.com" title="jQuery UI"><img class="logo" id="jqueryui" src="/logos/jqueryui.jpg" alt="jQuery UI"></a>
+				</div>
+			</div>
+
         <img src="/general/cinta.gif"/>
       </td>
     </tr>

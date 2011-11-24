@@ -87,9 +87,9 @@
       </td>
     </tr>
   </table>
-
-<% end %>
   </td>
+<% end %>
+
 </table>
 
 
