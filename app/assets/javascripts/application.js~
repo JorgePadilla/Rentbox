@@ -11,7 +11,7 @@
 				$("#viewer").removeClass("js-disabled");
 			
 			  //create new container for images
-				$("<div>").attr("id", "container").css({ position:"absolute"}).width($(".wrapper").length * 170).height(170).appendTo("div#viewer");
+				$("<div>").attr("id", "container").css({ position:"absolute"}).width($(".wrapper").length * 106).height(150).appendTo("div#viewer");
 			  	
 				//add images to container
 				$(".wrapper").each(function() {
@@ -19,7 +19,7 @@
 				});
 				
 				//work out duration of anim based on number of images (1 second for each image)
-				var duration = $(".wrapper").length * 10000;
+				var duration = $(".wrapper").length * 12000;
 				
 				//store speed for later (distance / time)
 				var speed = (parseInt($("div#container").width()) + parseInt($("div#viewer").width())) / duration;
@@ -75,23 +75,7 @@
 				//start anim
 				animator($("div#container"), duration, direction);
 				
-				//pause on mouseover
-				$("a.wrapper").live("mouseover", function() {
-				  
-					//stop anim
-					$("div#container").stop(true);
-					
-					//show controls
-					($("div#controls").length == 0) ? $("<div>").attr("id", "controls").appendTo("div#outerContainer").css({ opacity:0.7 }).slideDown("slow") : null ;
-					($("a#rtl").length == 0) ? $("<a>").attr({ id:"rtl", href:"#", title:"rtl" }).appendTo("#controls") : null ;
-					($("a#ltr").length == 0) ? $("<a>").attr({ id:"ltr", href:"#", title:"ltr" }).appendTo("#controls") : null ;
-					
-					//variable to hold trigger element
-					var title = $(this).attr("title");
-					
-					//add p if doesn't exist, update it if it does
-					($("p#title").length == 0) ? $("<p>").attr("id", "title").text(title).appendTo("div#controls") : $("p#title").text(title) ;
-				});
+
 				
 				//restart on mouseout
 				$("a.wrapper").live("mouseout", function(e) {
@@ -123,7 +107,7 @@
 					$("div#container").removeClass("rtl").addClass("ltr");
 										
 					//work out total travel distance
-					var totalDistance = parseInt($("div#container").width()) +100000+ parseInt($("div#viewer").width());
+					var totalDistance = parseInt($("div#container").width()) + parseInt($("div#viewer").width());
 					
 					//work out remaining distance
 					var distanceLeft = totalDistance - (parseInt($("div#container").css("left")) + parseInt($("div#container").width()));
@@ -157,3 +141,7 @@
 					animator($("div#container"), newDuration, "rtl");
 				});
 			});
+	
+$(document).ready(function(){
+$(".barra").height($("#tabla").height()-20);
+});

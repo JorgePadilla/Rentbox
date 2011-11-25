@@ -1,15 +1,15 @@
 /* js-disabled class - set image sizes so they all fit in the viewer */
-.js-disabled img { width:100px; height:50px; display:block; float:left; margin:30px 0 0; visibility:hidden; }
+.js-disabled img { width:150px; height:0px; display:block; float:left; margin:0px 0 10; visibility:hidden; }
 
-#outerContainer { width:842px; height:202px; margin:auto; position:relative; }
-#imageScroller { width:542px; height:202px; position:relative; background:#000000; }
-#viewer { width:882px; height:182px; overflow:hidden; margin:auto; position:relative; top:10px; }
-#imageScroller a:active, #imageScroller a:visited { color:#000000; }
+#outerContainer { width:106px; height:142px; margin:auto; position:relative; }
+#imageScroller { width:842px; height:142px; position:relative; background:#000000; }
+#viewer { width:882px; height:142px; overflow:hidden; margin:auto; position:relative; top:0px; }
+#imageScroller a:active, #imageScroller a:visited { color:#000000;}
 #imageScroller a img { border:0; }
-#controls { width:534px; height:47px; background:url(images/controlsBG.png) no-repeat; position:absolute; top:4px; left:4px; z-index:10;	}
-#controls a { width:37px; height:35px; position:absolute; top:3px; }
-#controls a:active, #controls a:visited { color:#0d0d0d; }
-#title { color:#ffffff; font-family:arial; font-size:100%; font-weight:bold; width:100%; text-align:center; margin-top:10px; }
+#controls { width:534px; height:0px; background:url(images/controlsBG.png) no-repeat; position:absolute; top:4px; left:4px; z-index:10;	}
+#controls a { width:37px; height:0px; position:absolute; top:3px; visibility:hidden;}
+#controls a:active, #controls a:visited { color:#0d0d0d; visibility:hidden;}
+#title { color:#ffffff; font-family:arial; font-size:100%; font-weight:bold; width:100%; text-align:center; margin-top:5px; visibility:hidden;}
 #rtl { background:url(/images/rtl.png) no-repeat; left:100px; }
 #rtl:hover { background:url(/images/rtl_over.png) no-repeat; left:99px; }
 #ltr { background:url(/images/ltr.png) no-repeat; right:100px; }
