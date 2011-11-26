@@ -1,0 +1,2498 @@
+
+
+Started GET "/estrenos" for 127.0.0.1 at 2011-11-27 00:18:31 -0600
+  Processing by EstrenosController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "estrenos" [0m
+  [1m[35mEstreno Load (0.5ms)[0m  SELECT "estrenos".* FROM "estrenos" ORDER BY titulo LIMIT 4 OFFSET 0
+Rendered estrenos/index.html.erb within layouts/application (144.8ms)
+Cache for Asset (application.js) is stale
+/home/userr/.rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.16/vendor/assets/javascripts/jquery.js isn't in paths: /root/Rentbox/app/assets/images, /root/Rentbox/app/assets/javascripts, /root/Rentbox/app/assets/stylesheets, /root/Rentbox/vendor/assets/stylesheets, /usr/local/rvm/gems/ruby-1.9.2-p290/gems/jquery-rails-1.0.16/vendor/assets/javascripts
+Compiled application.js  (13ms)  (pid 10320)
+Completed 200 OK in 474ms (Views: 471.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /cortes.css - 200 OK (3ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /estrenos.css - 200 OK (3ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /imageScroller.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /menu.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /nuestros_kioscos.css - 200 OK (3ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /prueba.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /jquery.vector-map.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /jquery-ui.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /cortes.js - 200 OK (6ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /estrenos.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /home.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /nuestros_kioscos.js - 200 OK (5ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /prueba.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:34 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:35 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:35 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:35 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:18:37 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 50ms (Views: 49.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /estrenos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/home/movies.svg" for 127.0.0.1 at 2011-11-27 00:25:15 -0600
+
+ActionController::RoutingError (No route matches [GET] "/home/movies.svg"):
+  
+
+Rendered /usr/local/rvm/gems/ruby-1.9.2-p290/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 54.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:27:44 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/nuestros_kioscos/index" for 127.0.0.1 at 2011-11-27 00:28:29 -0600
+  Processing by NuestrosKioscosController#index as HTML
+Rendered nuestros_kioscos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 48ms (Views: 47.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /application.js - 304 Not Modified (7ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:30 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:31 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:31 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:31 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:31 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:31 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:31 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:31 -0600
+Served asset /prueba.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:31 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:31 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:31 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:28:31 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 50ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:00 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:01 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:01 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:01 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:01 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:01 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:01 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:01 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:01 -0600
+Served asset /menu.js - 304 Not Modified (3ms)
+
+
+Started GET "/nuestros_kioscos/index" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+  Processing by NuestrosKioscosController#index as HTML
+Rendered nuestros_kioscos/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 46.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:09 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:10 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:10 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:10 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/tutorial/index" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+  Processing by TutorialController#index as HTML
+Rendered tutorial/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 113ms (Views: 112.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:12 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/tutorial/index" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+  Processing by TutorialController#index as HTML
+Rendered tutorial/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:23 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/tutorial/index" for 127.0.0.1 at 2011-11-27 00:29:24 -0600
+  Processing by TutorialController#index as HTML
+Rendered tutorial/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:24 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:24 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:24 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:24 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:24 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:24 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:24 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:24 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:24 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:24 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:25 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 109ms (Views: 108.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:29:41 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/estrenos" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+  Processing by EstrenosController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "estrenos" [0m
+  [1m[35mEstreno Load (0.4ms)[0m  SELECT "estrenos".* FROM "estrenos" ORDER BY titulo LIMIT 4 OFFSET 0
+Rendered estrenos/index.html.erb within layouts/application (110.6ms)
+Completed 200 OK in 158ms (Views: 155.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /menu.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:30:18 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 72ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:32:03 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-27 00:33:45 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Compiled proximamente.css  (34ms)  (pid 10320)
+Compiled application.js  (12ms)  (pid 10320)
+Compiled proximamente.js  (168ms)  (pid 10320)
+Completed 200 OK in 388ms (Views: 387.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /application.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/proximamente.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /proximamente.css - 200 OK (3ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:46 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 49ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /proximamente.css - 200 OK (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /jquery.vector-map.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /application.js - 200 OK (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /proximamente.js - 200 OK (3ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:33:49 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-27 00:33:59 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 118ms (Views: 117.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/proximamente.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /proximamente.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /proximamente.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:00 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 51ms (Views: 49.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /proximamente.css - 200 OK (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:12 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:13 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:13 -0600
+Served asset /proximamente.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:13 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:13 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:13 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:13 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:13 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/tutorial/index" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+  Processing by TutorialController#index as HTML
+Rendered tutorial/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 51ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /proximamente.css - 200 OK (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/proximamente.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /proximamente.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:16 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/nuestros_kioscos/index" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+  Processing by NuestrosKioscosController#index as HTML
+Rendered nuestros_kioscos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 117ms (Views: 115.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/proximamente.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /proximamente.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /proximamente.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:19 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/nuestros_kioscos/index" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+  Processing by NuestrosKioscosController#index as HTML
+Rendered nuestros_kioscos/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 60ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /proximamente.css - 200 OK (1ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /proximamente.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:35 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/tutorial/index" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+  Processing by TutorialController#index as HTML
+Rendered tutorial/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /application.css - 304 Not Modified (5ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /proximamente.css - 200 OK (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:38 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /proximamente.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:34:39 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 55ms (Views: 53.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /application.css - 304 Not Modified (7ms)
+
+
+Started GET "/assets/cortes.css?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /cortes.css - 200 OK (0ms)
+
+
+Started GET "/assets/estrenos.css?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /estrenos.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/imageScroller.css?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /imageScroller.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.css?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /menu.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.css?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /proximamente.css - 200 OK (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.css?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /nuestros_kioscos.css - 200 OK (0ms)
+
+
+Started GET "/assets/prueba.css?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /prueba.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.css?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /jquery.vector-map.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /jquery-ui.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /application.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/cortes.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /cortes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/estrenos.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /estrenos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/nuestros_kioscos.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /nuestros_kioscos.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/proximamente.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /proximamente.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/prueba.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /prueba.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-1.7.min.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /jquery-1.7.min.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.vector-map.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /jquery.vector-map.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/beispiel_karte.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /beispiel_karte.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/menu.js?body=1" for 127.0.0.1 at 2011-11-27 00:35:12 -0600
+Served asset /menu.js - 304 Not Modified (0ms)
