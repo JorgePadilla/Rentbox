@@ -8,7 +8,7 @@
 <%= csrf_meta_tags %>
 </head>
 
-<div class="barra">
+<div class="barra" style="position: fixed; left: 64px; top: 64px">
 <!--
 <a href= root_path>
  <img src="/Mascota.png" />
