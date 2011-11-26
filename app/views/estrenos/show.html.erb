@@ -30,6 +30,12 @@
 <p> No hay imagen relacionada a este estreno, por favor suba una imagen. </p>
 <% end %>
 
+<p><b>Trailer:</b></p>
+<% if @estreno.url != nil %>
+<a href="<%= @estreno.url %>" target="_blank">Enlace a Trailer</a>
+<% else %>
+<p><b>No posee trailer, agregue uno por favor</b></p>
+<% end %>
 <p>
   <b>DVD:</b>
   <% if @estreno.dvd %> 
