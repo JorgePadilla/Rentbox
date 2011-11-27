@@ -21,19 +21,23 @@
         <% end %>
       </div>
     </td>
-    <td width="371" height="32" align="center" valign="middle" bordercolor="0" bgcolor="#db2e34">
+    <td width="371" height="32" align="center" valign="middle" bordercolor="0" bgcolor="#f94a2d">
       <div align="center" class="mybody" >
-        <strong ><%= estreno.titulo %></strong>
+        <font color="#FFFFFF">
+          <b><%= estreno.titulo %></b>
+        </font>
       </div>
     </td>
-    <td width="202" height="32" align="center" valign="middle" bgcolor="#FFCC33" class="mybody">
-      <div align="center">
-        <% if estreno.fecha != nil %>
-        <b><%= estreno.fecha %></b>
-        <% else %>
-        <b>No posee fecha</b>
-        <% end %>
-      </div>
+    <td width="202" height="32" align="center" valign="middle" bordercolor="0" bgcolor="#f94a2d" class="mybody">
+      <font color="#FFFFFF">
+        <div align="center">
+          <% if estreno.fecha != nil %>
+          <%= estreno.fecha %>
+          <% else %>
+          No posee fecha
+          <% end %>
+        </div>
+      </font>
     </td>
     <td width="183" height="32" valign="middle">
       <div align="center">
@@ -57,8 +61,8 @@
           </div>
         </td>
       <td height="21" valign="top"><div align="center"> 
-          <p class="mybody">
-            <strong><%= estreno.clasificacion %></strong>
+          <p class="mybody"
+            <font color="#000000"><b><%= estreno.clasificacion %></b></font>
           </p>
         </div>
       </td>
@@ -67,17 +71,17 @@
       <td height="96" valign="top">
 	<% if estreno.dvd %>
         <p align="center">
-          <img src="/estrenos/dvd.gif" width="77" height="34">
+          <img src="/estrenos/dvd.svg" width="77" height="34">
         </p>
 	<% end %>
 	<% if estreno.bluray %>
         <p align="center">
-          <img src="/estrenos/bluray.gif" width="77" height="41">
+          <img src="/estrenos/bluray.svg" width="77" height="41">
 	</p>
 	<% end %>
 	<% if estreno.bluray3d %>
         <p align="center">
-          <img src="/estrenos/bluray3D.gif" width="77" height="51">
+          <img src="/estrenos/bluray3D.svg" width="77" height="51">
         </p>
 	<% end %>
       </td>
