@@ -1,3 +1,10 @@
+<table width=882 height="40" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <th height="40" align="center" nowrap background="/general/barra.gif" class="Headers"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><strong>Inicio</strong></font></th>
+  </tr>
+</table>
+<table>
+
 <table>
 <TD height="325" bgcolor="#ffffff">
 
@@ -13,7 +20,7 @@
     <td width="285">
       <div align="center">
         <a href="/nuestros_kioscos/index">
-          <img src="/home/movies.svg" width="271" height="271" border="0">
+          <img src="/home/buscar.svg" width="271" height="271" border="0">
         </a>
       </div>
     </td>
