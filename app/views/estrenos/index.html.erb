@@ -47,9 +47,15 @@
     </td>
     <td width="183" height="32" valign="middle">
       <div align="center">
-        <a href="http://www.traileraddict.com/emd/39199" target="_blank">
+	<% if estreno.url != nil %>
+        <a href="<%= estreno.url %>" target="_blank">
           <img src="/estrenos/ver_corto.gif" width="80" height="30" border="0" align="absmiddle">
         </a>
+	<% else %>
+       <a href="#">
+          <img src="/estrenos/ver_corto.gif" width="80" height="30" border="0" align="absmiddle">
+        </a>
+	<% end %>
       </div></td>
     </tr>
     <tr valign="bottom"> 

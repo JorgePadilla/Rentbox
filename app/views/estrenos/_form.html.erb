@@ -28,6 +28,10 @@
     <%= f.file_field :imagen %>
   </div>
   <div class="field">
+    <%= f.label :URL_Trailer %><br />
+    <%= f.text_field :url %>
+  </div>
+  <div class="field">
     <%= f.label :fecha %><br />
     <%= f.date_select :fecha, { :start_year => 1990, :end_year => Time.now.year, 
     :prompt => {:year => 'Año', :month => 'Mes', :day => 'Día'}, :use_month_numbers =>  true, :order => [:year, :month, :day] } %>
