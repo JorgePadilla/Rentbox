@@ -21,6 +21,7 @@ Rentbox::Application.routes.draw do
   get "tutorial/paso4"
   get "contactenos/index"
   get "nuestros_kioscos/index"
+  get "proximamente/index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
