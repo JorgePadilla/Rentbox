@@ -1,1 +1,69 @@
+<table width=882 height="40" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <th height="40" align="center" nowrap background="/general/barra.gif" class="Headers"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><strong>Sobre nosotros</strong></font></th>
+  </tr>
+</table>
 
+<table align="center" width=882 border="0" cellspacing="0" cellpadding="0">
+    <td>
+      <table width="100%" border="0" cellspacing="2" cellpadding="2" bgcolor="#FF9900">
+        <tr>
+          <td >
+            <table border="0" cellspacing="0" cellpadding="0" >
+              <tr style="padding:20 20 20 20">
+                <td colspan=2>
+                  <div >
+                    <p><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                      Somos una compania de entretenimiento que ofrece un servicio innovador y diferenciado en la renta de peliculas y video juegos ofreciendo a nuestros consumidores los mejores estrenos, mayor comodidad y a un precio incomparable.
+                    </span></p>
+                    <p><span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                      <br/>Entre las ventajas de nuestro servicio se encuentran las siguientes:
+                    </span></p>
+                    <UL type=disc>
+                      <LI class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Reservar los titulos en linea
+                      </SPAN></LI>
+                      <LI class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Rentar en una ubicacion y devolver en otra diferente
+                      </SPAN></LI>
+                      <LI class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Ver los titulos disponibles por ubicacion desde nuestra pagina web
+                      </SPAN></LI>
+                      <LI class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Amigable para el usuario
+                      </SPAN></LI>
+                      <LI class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Seguro, facil y rapido
+                      </SPAN></LI>
+                      <LI class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Amplia variedad de titulos
+                      </SPAN></LI>
+                      <LI class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Accesible para personas discapacitadas
+                      </SPAN></LI>
+                      <LI class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Opcion a comprar las peliculas o video juegos que le gusten
+                      </SPAN></LI>
+                      <LI class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Software bilingue
+                      </SPAN></LI>
+                      <LI class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        No requiere membresia
+                      </SPAN></LI>
+                      <LI class=MsoNormal style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in"><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Ubicaciones convenientes
+                      </SPAN></LI>
+                    </UL>
+                    <P><SPAN style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                      Rentbox evoluciona tu entretenimiento.
+                    </SPAN></P>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

@@ -1,0 +1,73 @@
+<table width=882 height="40" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <th height="40" align="center" nowrap background="/general/barra.gif" class="Headers"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><strong>Contactenos</strong></font></th>
+  </tr>
+</table>
+<table width=882 border="0" cellspacing="0" cellpadding="0">
+    <td>
+      <table width="100%" border="0" cellspacing="2" cellpadding="2" bgcolor="#FF9900">
+        <tr>
+          <td>
+            <table border="0" cellspacing="0" cellpadding="0" bgcolor="#FDEDDE" >
+              <tr style="padding:20 20 20 20">
+                <td colspan=2>
+                  <div id=div_content height=100% style=position:relative;height:100%;padding: 5 5 2 5;>
+                    <p>
+                      <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Nuestros clientes puede contactarnos de dos maneras:
+                      </span>
+                    </p>
+                    <p>
+                      <b>
+                        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                          Por Telefono:
+                        </span>
+                      </b>
+                    </p>
+                    <p>
+                      <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        9472 7073
+                      </span>
+                    </p>
+                    <p>
+                      <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Consultas sobre rentas y devoluciones de 8:00 AM to 8:00 PM (Monday-Sunday)
+                      </span>
+                    </p>
+                    <p>
+                      <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Preguntas, sugerencias, reclamos o cualquier otra informacion de 8:00 AM to 5:00 PM (Monday-Sunday)
+                      </span>
+                    </p>
+                    <p>
+                      <b>
+                        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                          Por Correo Electronico:
+                        </span>
+                      </b>
+                    </p>
+                    <p>
+                      <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        Escribenos a:
+                      </span>
+                    </p>
+                    <p>
+                      <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        servicioalcliente@rentbox.com
+                      </span>
+                    </p>
+                    <p>
+                      <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">
+                        ventas@rentbox.hn
+                      </span>
+                    </p>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
