@@ -3,7 +3,7 @@
 <head>
 
   <title>Rentbox</title>
-<%= stylesheet_link_tag "application","jquery.vector-map.css" %>
+<%= stylesheet_link_tag "estrenos", "application","jquery.vector-map.css" %>
 <%= javascript_include_tag "application","jquery-1.7.min.js","jquery.vector-map.js","beispiel_karte.js","menu.js"%> 
 <%= csrf_meta_tags %>
 </head>
@@ -64,18 +64,31 @@
     <tr>
       <td width="882" bgcolor="#000000">
         <img src="/general/cinta.gif" />
-		<div id="outerContainer">
+		
 			<div id="imageScroller">
 				<div id="viewer" class="js-disabled">
-					<a class="wrapper"><img class="logo" id="apple" src="/logos/apple.jpg" alt="Apple"></a>
-					<a class="wrapper"><img class="logo" id="firefox" src="/logos/firefox.jpg" alt="Firefox"></a>
-					<a class="wrapper"><img class="logo" id="jquery" src="/logos/jquery.jpg" alt="jQuery"></a>
-					<a class="wrapper"><img class="logo" id="twitter" src="/logos/twitter.jpg" alt="Twitter"></a>
-					<a class="wrapper"><img class="logo" id="jqueryui" src="/logos/jqueryui.jpg" alt="jQuery UI"></a>
+					<a class="wrapper"><img class="logo" id="apple" src="/logos/apple.jpg" alt="imagen1"></a>
+					<a class="wrapper"><img class="logo" id="firefox" src="/logos/firefox.jpg" alt="imagen2"></a>
+					<a class="wrapper"><img class="logo" id="jquery" src="/logos/jquery.jpg" alt="imagen3"></a>
+					<a class="wrapper"><img class="logo" id="twitter" src="/logos/twitter.jpg" alt="imagen4"></a>
+					<a class="wrapper"><img class="logo" id="jqueryui" src="/logos/jqueryui.jpg" alt="imagen5"></a>
+					
+					<a class="wrapper"><img class="logo" id="apple" src="/logos/apple.jpg" alt="imagen1"></a>
+					<a class="wrapper"><img class="logo" id="firefox" src="/logos/firefox.jpg" alt="imagen2"></a>
+					<a class="wrapper"><img class="logo" id="jquery" src="/logos/jquery.jpg" alt="imagen3"></a>
+					<a class="wrapper"><img class="logo" id="twitter" src="/logos/twitter.jpg" alt="imagen4"></a>
+					<a class="wrapper"><img class="logo" id="jqueryui" src="/logos/jqueryui.jpg" alt="imagen5"></a>
 
+					<a class="wrapper"><img class="logo" id="apple" src="/logos/apple.jpg" alt="imagen1"></a>
+					<a class="wrapper"><img class="logo" id="firefox" src="/logos/firefox.jpg" alt="imagen2"></a>
+					<a class="wrapper"><img class="logo" id="jquery" src="/logos/jquery.jpg" alt="imagen3"></a>
+					<a class="wrapper"><img class="logo" id="twitter" src="/logos/twitter.jpg" alt="imagen4"></a>
+					<a class="wrapper"><img class="logo" id="jqueryui" src="/logos/jqueryui.jpg" alt="imagen5"></a>
 				</div>
 			</div>
-		</div>
+
+			
+		
         <img src="/general/cinta.gif"/>
       </td>
     </tr>

@@ -10,7 +10,7 @@
 				$("#viewer").removeClass("js-disabled");
 
 			  //create new container for images
-				$("<div>").attr("id", "container").css({ position:"absolute"}).width($(".wrapper").length * 106).height(150).appendTo("div#viewer");
+				$("<div>").attr("id", "container").css({ position:"absolute"}).width($(".wrapper").length * 170).height(150).appendTo("div#viewer");
 
 				//add images to container
 				$(".wrapper").each(function() {
@@ -27,7 +27,7 @@
 				var direction = "rtl";
 
 				//set initial position and class based on direction
-				(direction == "rtl") ? $("div#container").css("left", $("div#viewer").width()).addClass("rtl") : $("div#container").css("left", 0 - $("div#container").width()).addClass("ltr") ;
+				(direction == "rtl") ? $("div#container").css("center", $("div#viewer").width()).addClass("rtl") : $("div#container").css("center", 0 - $("div#container").width()).addClass("ltr") ;
 
 				//animator function
 				var animator = function(el, time, dir) {
@@ -70,31 +70,10 @@
 						});
 					}
 				}
-
+			
 				//start anim
 				animator($("div#container"), duration, direction);
 
-
-
-				//restart on mouseout
-				$("a.wrapper").live("mouseout", function(e) {
-
-					//hide controls if not hovering on them
-					(e.relatedTarget == null) ? null : (e.relatedTarget.id != "controls") ? $("div#controls").slideUp("slow").remove() : null ;
-
-					//work out total travel distance
-					var totalDistance = parseInt($("div#container").width()) + parseInt($("div#viewer").width());
-
-					//work out distance left to travel
-					var distanceLeft = ($("div#container").hasClass("ltr")) ? totalDistance - (parseInt($("div#container").css("left")) + parseInt($("div#container").width())) : totalDistance - (parseInt($("div#viewer").width()) - (parseInt($("div#container").css("left")))) ;
-
-					//new duration is distance left / speed)
-					var newDuration = distanceLeft / speed;
-
-					//restart anim
-					animator($("div#container"), newDuration, $("div#container").attr("class"));
-
-				});
 
 				//handler for ltr button
 				$("#ltr").live("click", function() {
