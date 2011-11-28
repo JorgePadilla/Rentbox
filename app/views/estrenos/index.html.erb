@@ -1,67 +1,74 @@
 <table width=882 height="40" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr> 
-    <th height="40" align="center" nowrap background="/general/barra.gif" class="Headers"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><strong>Estrenos</strong></font></th>
+    <th height="40" align="center" nowrap background="/general/barra.gif" class="Headers">
+      <font color="#FFFFFF" face="Arial, Helvetica, sans-serif">
+        <strong>Estrenos</strong>
+      </font>
+    </th>
   </tr>
 </table>
+
 <table>
   <td bgcolor="#FFFFFF">
 
+<div class="navBar">
+  <%= link_to 'HOME', root_url %><br/>
+  <%= paginate @estrenos %><br/>
+</div>
 
-<%= link_to 'HOME', root_url %><br/>
-<%= paginate @estrenos %><br/>
 <% @estrenos.each do |estreno| %>
 <table align="center">
   <tr valign="bottom"> 
     <td width="106" height="200" rowspan="3" valign="top">     
-      <div align="center">
+      <figure align="center">
         <% if estreno.imagen.exists? then %>
         <%= image_tag estreno.imagen.url(:thumb) %>
         <% else %>
-        <p> No hay imagen relacionada a este estreno.</p>
+        <p class ="contenido" align="center"> No hay imagen relacionada a este estreno.</p>
         <% end %>
-      </div>
+      </figure>
     </td>
-    <td width="371" height="32" align="center" valign="middle" bordercolor="0" bgcolor="#f94a2d">
-      <div align="center" class="mybody" >
+    <td width="371" height="32" align="center" valign="middle" class="td_header">
+      <div align="center" class="td_body">
         <font color="#FFFFFF">
-          <b><%= estreno.titulo %></b>
+          <p><%= estreno.titulo %></p>
         </font>
       </div>
     </td>
-    <td width="202" height="32" align="center" valign="middle" bordercolor="0" bgcolor="#f94a2d" class="mybody">
-      <font color="#FFFFFF">
-        <div align="center">
-          <% if estreno.fecha != nil %>
-          <%= estreno.fecha %>
-          <% else %>
-          No posee fecha
-          <% end %>
-        </div>
-      </font>
+    <td width="202" height="32" align="center" valign="middle" class="td_header">
+        <div align="center" class="td_body">
+          <font color="#FFFFFF">
+            <% if estreno.fecha != nil %>
+            <p><%= estreno.fecha %></p>
+            <% else %>
+            <p>No posee fecha</p>
+            <% end %>
+          </font>
+        </div>    
     </td>
     <td width="183" height="32" valign="middle">
       <div align="center">
 	<% if estreno.url != nil %>
         <a href="<%= estreno.url %>" target="_blank">
-          <img src="/estrenos/ver_corto.gif" width="80" height="30" border="0" align="absmiddle">
+          <img src="/estrenos/corto2.svg" width="100" height="60" border="0" align="absmiddle">
         </a>
 	<% else %>
-       <a href="#">
-          <img src="/estrenos/ver_corto.gif" width="80" height="30" border="0" align="absmiddle">
+        <a href="#">
+          <img src="/estrenos/corto2.svg" width="100" height="60" border="0" align="absmiddle">
         </a>
 	<% end %>
       </div></td>
     </tr>
     <tr valign="bottom"> 
       <td height="168" colspan="2" rowspan="2" align="center" valign="top" bordercolor="0" class="Synopsis">
-        <div align="left"> 
-          <p class="mybody">
+        <div align="center"> 
+          <p class="contenido">
             <%= estreno.sinopsis %>
           </p>
-          </div>
+        </div>
         </td>
       <td height="21" valign="top"><div align="center"> 
-          <p class="mybody"
+          <p class="mybody">
             <font color="#000000"><b><%= estreno.clasificacion %></b></font>
           </p>
         </div>

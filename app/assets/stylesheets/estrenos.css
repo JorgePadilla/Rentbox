@@ -1,0 +1,58 @@
+/* Veamos que pasa*/
+
+.navBar a{
+  color: #800000 ;
+  text-decoration: none;
+  font-family:Helvetica,Arial,sans-serif;
+  font-size:14px;
+  font-weight:800;
+  opacity:0.9;
+}
+
+.navBar a:hover {
+    color: #e50000; 
+} 
+
+strong{
+color:#ffffff;
+  
+}
+
+.Synopsis, figure, .td_header{
+        background-color:#e50000;
+        border:2.5px solid #800000;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	border-radius:15px;
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+}
+
+.td_body{
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-shadow:0 1px 0 black;
+}
+
+.Synopsis{
+	background-color:#b51211;
+}
+
+.contenido, .links_estreno *{
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:16px;
+	font-weight:500;
+	color:#ffffff;
+}
+
+figure{
+	border:2.5px solid #000000;
+	float:left;
+        width:100px;
+	height:150px;
+	overflow:hidden;	
+	background-color:#db2e34;
+}
