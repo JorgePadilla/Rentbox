@@ -84,6 +84,24 @@
 					<a class="wrapper"><img class="logo" id="jquery" src="/logos/jquery.jpg" alt="imagen3"></a>
 					<a class="wrapper"><img class="logo" id="twitter" src="/logos/twitter.jpg" alt="imagen4"></a>
 					<a class="wrapper"><img class="logo" id="jqueryui" src="/logos/jqueryui.jpg" alt="imagen5"></a>
+					  
+					<a class="wrapper"><img class="logo" id="apple" src="/logos/apple.jpg" alt="imagen1"></a>
+					<a class="wrapper"><img class="logo" id="firefox" src="/logos/firefox.jpg" alt="imagen2"></a>
+					<a class="wrapper"><img class="logo" id="jquery" src="/logos/jquery.jpg" alt="imagen3"></a>
+					<a class="wrapper"><img class="logo" id="twitter" src="/logos/twitter.jpg" alt="imagen4"></a>
+					<a class="wrapper"><img class="logo" id="jqueryui" src="/logos/jqueryui.jpg" alt="imagen5"></a>
+					
+					<a class="wrapper"><img class="logo" id="apple" src="/logos/apple.jpg" alt="imagen1"></a>
+					<a class="wrapper"><img class="logo" id="firefox" src="/logos/firefox.jpg" alt="imagen2"></a>
+					<a class="wrapper"><img class="logo" id="jquery" src="/logos/jquery.jpg" alt="imagen3"></a>
+					<a class="wrapper"><img class="logo" id="twitter" src="/logos/twitter.jpg" alt="imagen4"></a>
+					<a class="wrapper"><img class="logo" id="jqueryui" src="/logos/jqueryui.jpg" alt="imagen5"></a>
+
+					<a class="wrapper"><img class="logo" id="apple" src="/logos/apple.jpg" alt="imagen1"></a>
+					<a class="wrapper"><img class="logo" id="firefox" src="/logos/firefox.jpg" alt="imagen2"></a>
+					<a class="wrapper"><img class="logo" id="jquery" src="/logos/jquery.jpg" alt="imagen3"></a>
+					<a class="wrapper"><img class="logo" id="twitter" src="/logos/twitter.jpg" alt="imagen4"></a>
+					<a class="wrapper"><img class="logo" id="jqueryui" src="/logos/jqueryui.jpg" alt="imagen5"></a>
 				</div>
 			</div>
 
