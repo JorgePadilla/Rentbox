@@ -49,6 +49,6 @@
     <%= f.check_box :bluray3d%>
   </div>
   <div class="actions">
-    <%= f.submit "subir estreno"%>
+    <%= f.submit "subir extreno"%>
   </div>
 <% end %>

@@ -1,6 +1,6 @@
 class EstrenosController < ApplicationController
 
-  http_basic_authenticate_with :name => "admin", :password => "secretodeamor", :except => :index
+  http_basic_authenticate_with :name => "admin", :password => "grupotecnia", :except => :index
   # GET /estrenos
   # GET /estrenos.json
   def index
