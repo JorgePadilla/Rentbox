@@ -1,7 +1,7 @@
 /* js-disabled class - set image sizes so they all fit in the viewer */
 .js-disabled img { width:150px; height:0px; display:block; float:left; margin:0px 0 10; visibility:hidden; }
 
-#outerContainer { width:842px; height:142px; margin:auto; position:relative; }
+#outerContainer { width:256px; height:142px; margin:auto; position:relative; }
 #imageScroller { width:842px; height:142px; position:relative; background:#000000; }
 #viewer { width:882px; height:142px; overflow:hidden; margin:auto; position:relative; top:0px; }
 #imageScroller a:active, #imageScroller a:visited { color:#000000;}

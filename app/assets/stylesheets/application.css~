@@ -52,7 +52,6 @@ div.barra
   height: 100%;
   text-align:center;
   width: 173px;
-  padding-top:20px;
 
 
 }
