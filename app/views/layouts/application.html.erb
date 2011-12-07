@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<!--
+<a href= root_path>
+ <img src="/Mascota.png" />
+-->
   <title>Rentbox</title>
 <%= stylesheet_link_tag "estrenos", "application","jquery.vector-map.css" %>
 <%= javascript_include_tag "application","jquery-1.7.min.js","jquery.vector-map.js","beispiel_karte.js","menu.js"%> 
 <%= csrf_meta_tags %>
 </head>
-
-<div class="barra" style="position: fixed; left: 4px; top: 4px">
 <!--
-<a href= root_path>
- <img src="/Mascota.png" />
--->
+<div class="barra" style="position: fixed; left: 4px; top: 4px">
+
 
 
 <br /><br />
@@ -23,14 +23,16 @@
   <%= link_to 'Nuestros kioscos',"/nuestros_kioscos/index" %><br /><br />
   <%= link_to 'Estrenos',estrenos_path  %><br /><br />
   <%= link_to 'Como funciona', "/tutorial/index" %><br /><br />
-  <%= link_to 'Buscar Títulos', "http://rentbox.dvmatic.com" %><br /><br>
+  <%= link_to 'Buscar títulos', "http://rentbox.dvmatic.com" %><br /><br>
   <%= link_to 'En tu tienda', "http://rentbox.dvmatic.com" %> <br /><br> 
   <%= link_to 'Mi cuenta', "http://rentbox.dvmatic.com" %> <br /><br />
-<!--  <%= link_to 'Planes de membresía', "/planes_membresia/index" %>-->
+ <%= link_to 'Planes de membresía', "/planes_membresia/index" %>
+     <%= link_to 'Preguntas frecuentes', "/contactenos/index" %> <br /><br />
     <%= link_to 'Contactenos', "/contactenos/index" %>
 
 
-</div>
+</div>-->
+
 <!--<form>
 <div id="menu" >
     <ul class="menu">
@@ -50,9 +52,9 @@
     </ul>
 </div>
 </form>-->
+<body>
 
-<div class="space"  >
-<table  border="0" cellspacing="0" cellpadding="0" id=tabla  >
+<table  align="center" border="0" cellspacing="0" cellpadding="0" >
   <!-- Sombra izquierda -->
   <td width=10 background="/general/sombra_derecha.gif" />
   <!-- Fin sombra izquierda -->
@@ -62,9 +64,14 @@
         <TBODY>
     <!-- Inicio yield -->
     <tr>
-      <td width="882">
-        <img src="/rentbox3.svg"/>
-      </td>
+     <td>
+<h1 color="red" >
+        <img src="/rentbox4.svg" height="100px" width="240px" />
+	<span style="font-size:68px " ><font color="#FFFFFF" >Bienvenido </font></span>
+
+	<img src="/Mascota.png" height="100px" width="180px" />
+</h1>
+       </td>
     </tr>
     <tr>
       <td width="882" bgcolor="#000000">
@@ -110,6 +117,18 @@
 				</div>
 			</div>
 
+
+
+
+
+
+
+
+
+
+
+
+
 			
 		
         <img src="/general/cinta.gif"/>
@@ -117,6 +136,21 @@
     </tr>
     <tr>
       <td>
+
+
+
+<div id="menu" align="center">
+    <ul class="menu">
+        <li><a href="../home/index"><span>Inicio</span></a></li>
+        <li><a href="/nuestros_kioscos/index" class="parent"><span>Nuestros kioscoso</span></a></li>
+        <li><a href="/estrenos"><span>Estrenos</span></a></li>
+        <li class="last"><a href="/contactenos/index"><span>Contactenos</span></a></li>
+	<li class="last"><a href="/tutorial/index"><span>Como funciona</span></a></li>
+	<li class="last"><a href="http://rentbox.dvmatic.com"><span>Mi cuenta</span></a></li>
+	<li class="last"><a href="http://rentbox.dvmatic.com"><span>Faq</span></a></li>
+    </ul>
+</div>
+
 
         <%= yield %>
 	<img src="/general/cinta.gif"/>
@@ -196,13 +230,7 @@
   <!-- Fin sombra derecha -->
         </TBODY>
 </table>
-</div>
 
-
-</div>
 </body>
-
-
-
 </html>
 

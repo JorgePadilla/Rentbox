@@ -1,68 +1,75 @@
+<table width=882 height="40" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <th height="40" align="center" nowrap background="/general/barra.gif" class="Headers">
+      <font color="#FFFFFF" face="Arial, Helvetica, sans-serif">
+        <strong>Estrenos</strong>
+      </font>
+    </th>
+  </tr>
+</table>
+
 <table>
   <td bgcolor="#FFFFFF">
-    <table width="100%" height="40" border="0" align="center" cellpadding="0" cellspacing="0">
-      <tr> 
-        <th width="40%" align="center" nowrap background="estrenos/barra.gif" class="Headers">
-          <font color="#FFFFFF"></font>
-        </th>
-        <th width="21%" align="center" valign="middle" nowrap background="estrenos/barra.gif" class="Headers">
-          <div align="center">
-            <font color="#FFFFFF">ESTRENOS</font>
-          </div>
-        </th>
-        <th width="39%" align="center" valign="middle" nowrap background="estrenos/barra.gif" class="Headers">
-          <div align="left"></div>
-        </th>
-      </tr>
-    </table>
 
+<div class="navBar">
 
-<%= link_to 'HOME', root_url %><br/>
-<%= paginate @estrenos %><br/>
+  <%= paginate @estrenos %><br/>
+</div>
+
 <% @estrenos.each do |estreno| %>
 <table align="center">
   <tr valign="bottom"> 
     <td width="106" height="200" rowspan="3" valign="top">     
-      <div align="center">
+      <figure align="center">
         <% if estreno.imagen.exists? then %>
         <%= image_tag estreno.imagen.url(:thumb) %>
         <% else %>
-        <p> No hay imagen relacionada a este estreno.</p>
+        <p class ="contenido" align="center"> No hay imagen relacionada a este estreno.</p>
         <% end %>
+      </figure>
+    </td>
+    <td width="371" height="32" align="center" valign="middle" class="td_header">
+      <div align="center" class="td_body">
+        <font color="#FFFFFF">
+          <p><%= estreno.titulo %></p>
+        </font>
       </div>
     </td>
-    <td width="371" height="32" align="center" valign="middle" bordercolor="0" bgcolor="#db2e34">
-      <div align="center" class="mybody" >
-        <strong ><%= estreno.titulo %></strong>
-      </div>
-    </td>
-    <td width="202" height="32" align="center" valign="middle" bgcolor="#FFCC33" class="mybody">
-      <div align="center">
-        <% if estreno.fecha != nil %>
-        <b><%= estreno.fecha %></b>
-        <% else %>
-        <b>No posee fecha</b>
-        <% end %>
-      </div>
+    <td width="202" height="32" align="center" valign="middle" class="td_header">
+        <div align="center" class="td_body">
+          <font color="#FFFFFF">
+            <% if estreno.fecha != nil %>
+            <p><%= estreno.fecha %></p>
+            <% else %>
+            <p>No posee fecha</p>
+            <% end %>
+          </font>
+        </div>    
     </td>
     <td width="183" height="32" valign="middle">
       <div align="center">
-        <a href="http://www.traileraddict.com/emd/39199" target="_blank">
-          <img src="/estrenos/ver_corto.gif" width="80" height="30" border="0" align="absmiddle">
+	<% if estreno.url != nil %>
+        <a href="<%= estreno.url %>" target="_blank">
+          <img src="/estrenos/corto2.svg" width="100" height="60" border="0" align="absmiddle">
         </a>
+	<% else %>
+        <a href="#">
+          <img src="/estrenos/corto2.svg" width="100" height="60" border="0" align="absmiddle">
+        </a>
+	<% end %>
       </div></td>
     </tr>
     <tr valign="bottom"> 
       <td height="168" colspan="2" rowspan="2" align="center" valign="top" bordercolor="0" class="Synopsis">
-        <div align="left"> 
-          <p class="mybody">
+        <div align="center"> 
+          <p class="contenido">
             <%= estreno.sinopsis %>
           </p>
-          </div>
+        </div>
         </td>
       <td height="21" valign="top"><div align="center"> 
           <p class="mybody">
-            <strong><%= estreno.clasificacion %></strong>
+            <font color="#000000"><b><%= estreno.clasificacion %></b></font>
           </p>
         </div>
       </td>
@@ -71,25 +78,25 @@
       <td height="96" valign="top">
 	<% if estreno.dvd %>
         <p align="center">
-          <img src="/estrenos/dvd.gif" width="77" height="34">
+          <img src="/estrenos/dvd.svg" width="77" height="34">
         </p>
 	<% end %>
 	<% if estreno.bluray %>
         <p align="center">
-          <img src="/estrenos/bluray.gif" width="77" height="41">
+          <img src="/estrenos/bluray.svg" width="77" height="41">
 	</p>
 	<% end %>
 	<% if estreno.bluray3d %>
         <p align="center">
-          <img src="/estrenos/bluray3D.gif" width="77" height="51">
+          <img src="/estrenos/bluray3D.svg" width="77" height="51">
         </p>
 	<% end %>
       </td>
     </tr>
   </table>
-  </td>
-<% end %>
 
+<% end %>
+  </td>
 </table>
 
 

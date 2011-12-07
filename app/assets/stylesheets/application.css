@@ -5,6 +5,15 @@
  *= require_self
  *= require_tree . 
 */
+body{
+margin: 4px 4px 4px 4px;
+  
+}
+fondo{
+ font-weight:900;
+ font-size:150%;
+  
+}
 div.barra > a
 {
   color: white ;
@@ -63,9 +72,9 @@ img.hidden
 }
 div.marco
 {
-position:relative;
+position:absolute; 
 height: 100%;
-left:122px;
+
 
 
 width: 100%
@@ -73,6 +82,7 @@ align: center;
 
 /*min-width:1132px;
 max-width:1132px;*/
+
 
 }
 

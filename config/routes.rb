@@ -1,5 +1,7 @@
 Rentbox::Application.routes.draw do
 
+  get "faq/index"
+
   get "cortes/index"
   get "estrenos/admin"
   resources :estrenos

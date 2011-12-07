@@ -5,10 +5,10 @@
 </table>
 <table width=882 border="0" cellspacing="0" cellpadding="0">
     <td>
-      <table width="100%" border="0" cellspacing="2" cellpadding="2" bgcolor="#FF9900">
+      <table width="100%" border="0" cellspacing="2" cellpadding="2">
         <tr>
           <td>
-            <table border="0" cellspacing="0" cellpadding="0" bgcolor="#FDEDDE" >
+            <table border="0" cellspacing="0" cellpadding="0" >
               <tr style="padding:20 20 20 20">
                 <td colspan=2>
                   <div id=div_content height=100% style=position:relative;height:100%;padding: 5 5 2 5;>

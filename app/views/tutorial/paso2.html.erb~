@@ -1,0 +1,40 @@
+<table width=882 height="40" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr> 
+    <th height="40" align="center" nowrap background="/general/barra.gif" class="Headers"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"><strong>Cómo funciona</strong></font></th>
+  </tr>
+</table>
+<table width="700" height="252" border="0" align="center">
+  <tr>
+    <td width="350" height="277" rowspan="2" align="center" valign="top"><img src="/tutorial/paso2.gif" width="350" height="275"/>
+    <td height="160" colspan="2" align="left" valign="middle" class="inmystore">
+        <div align="left" class="boldedsmallheaders"> 
+        <p>
+          <font color="333399">
+            Para su conveniencia Usted puede utilizar cualquiera de los metodos de pago que CineBank le ha facilitado.
+          </font>
+        </p>
+      </div>
+      <div align="left" class="boldedsmallheaders">
+        <font color="333399">
+          Seleccione alguno de estos metodos de pago y usted estara listo para comenzar a disfrutar de los beneficios que tiene alquilar en CineBank.
+        </font>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td width="160" height="24" valign="middle" class="boldedsmallheaders">
+      <div align="center">
+        <a href="/tutorial/paso1">
+          <img src="/tutorial/anterior.gif" width="150" height="30" border="0"/>
+        </a>
+      </div>
+    </td>
+    <td width="176" valign="middle" class="boldedsmallheaders">
+      <div align="center">
+        <a href="/tutorial/paso3">
+          <img src="/tutorial/siguiente.gif" width="150" height="30" border="0">
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>

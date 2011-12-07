@@ -18,118 +18,266 @@
  *  </div>
  *********************************************
  */
+/** Selectors **/
 .hide{
 display:none;
   
 }
-#menu, #menu * {
-    list-style:none;
-    border:0;
-    padding:0;
-    margin:0;
-    
-    
-    
+/* Reset */
+#menu * {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  text-decoration: none;
+
+}
+div#menu {
+position:relative;}
+#menu ul.menu {
+  white-space: nowrap;
 }
 
+/* Geometrical arrangement */
+#menu ul.menu li {
+  display: inline-block;
+  height: 46px;
+  position: relative;
+}
+
+#menu ul.menu li div {
+  position: absolute;
+  top: 46px;
+  left: 0px;
+}
+
+#menu ul.menu li div div {
+  position: absolute;
+  top: -6px;
+  left: 188px;
+}
+
+/* Escaping style for lower levels */
+#menu ul.menu li div ul li {
+  display: block;
+  float: none;
+  width: auto;
+  height: auto;
+}
+
+/** Graphics **/
+
+/* Horizontal sliding doors */
+#menu ul.menu li a {
+  padding-left: 14px;
+  background-image: url("images/item1.png");
+  background-repeat: no-repeat;
+  background-position: left -1000px;
+  display: inline-block;
+  margin: 10px 2px;
+}
+
+#menu ul.menu li a span {
+  padding-right: 14px;
+  padding-left: 0px;
+  background-image: url("images/item1.png");
+  background-repeat: no-repeat;
+  background-position: right -1000px;
+  display: inline-block;
+  height: 27px;
+  line-height: 27px;
+  cursor: pointer;
+}
+
+#menu ul.menu li:hover a {
+  background-position: left -54px;
+}
+
+#menu ul.menu li:hover a span {
+  background-position: right -81px;
+}
+/*
+#menu ul.menu li.active a {
+
+  background-position: left 0px;
+}
+/*
+#menu ul.menu li.active a span {
+		color: #d31b01;
+  background-position: right -27px;
+  
+}
+*/
+/* Escape Horizontal doors */
+#menu ul.menu li div ul li a {
+  display: block;
+  padding: 0px;
+  margin: 0px;
+  background: none;
+}
+
+#menu ul.menu li div ul li a span {
+  display: block;
+  padding: 0px;
+  background: none;
+  height: auto;
+  width: 165px;
+  line-height: 25px;
+  padding: 7px 0 7px 9px;
+  white-space: normal;  
+}
+
+/* Vertical sliding doors */
+#menu ul.menu li div { 
+  width: 200px;
+  padding-top: 6px;
+  background-image: url("images/submenu-top.png");
+  background-repeat: no-repeat;
+  background-position: 0px top;
+}
+
+#menu ul.menu li div ul { 
+  padding: 6px 6px 9px 6px;
+  padding-top: 0;
+  background-image: url("images/submenu-bottom.png");
+  background-repeat: no-repeat;
+  background-position: 0px bottom;
+}
+
+/* Hover Effect on Submenus */
+#menu ul.menu ul li:hover
+{
+
+}
+#menu ul.menu li.active ul li a span {
+	color: red;
+	width: 165px;}
+#menu ul.menu li.active ul li a span:hover {
+	color:red;}
+	
+#menu ul.menu ul li a span:hover
+{
+	color:red; 
+}
+
+
+/* Main header line */
 #menu {
-    width:173px;
-    position:absolute;
-    z-index:999;
-    background:url(images/base.png) -173px 0;
-    padding-top:20px;
-    
-    
+  height: 46px;
+  padding-left: 14px;
+  background:transparent url(images/bg.png) repeat-x;
 }
-#menu ul {
-    background:url(images/base.png) 0 bottom;
-    padding-bottom:11px;
+
+/* Text shadow */
+#menu span
+{
+  color: #fF4040;
+  font-weight: 600;
 }
-* html #menu, * html #menu ul { background-image:url(images/base.gif); }
-#menu div {
-    width:180px;
-    position:relative;
-    background:url(images/sub.png) -180px 0;
-    padding-top:9px;
+
+#menu li:hover>a>span 
+{
+  color: #A60000;
 }
-#menu div ul {
-    background:url(images/sub.png) 0 bottom;
-    padding-bottom:5px;
+
+/* Fonts */
+#menu ul.menu li a span
+{ 
+  font-family: Arial;
+  font-size: 13px;
+  font-weight: 600;
 }
-* html #menu div, * html #menu div ul { background-image:url(images/sub.gif); }
-*+html #menu li { border-bottom:1px solid transparent; }
-#menu li div {
-    visibility:hidden;
-    position:absolute;
-    margin:-44px 0 0 -2px;
-    left:100%;
+
+#menu ul.menu li div ul li a span
+{ color:#5E5E5E;
+  font-family: Trebuchet MS;
+  font-size: 12px;
+  font-weight: 400;
 }
-* html #menu li div, *+html #menu li div { margin-top:-42px; }
-#menu li:hover>div { visibility:visible; }
-* html #menu li { height:34px; }
-#menu li a {
-    display:block;
-    font-size:11px;
-    font-family:'Trebuchet MS', Arial, Verdana;
-    font-weight:bold;
-    text-decoration:none;
-    color:#fff;
-    padding-top:11px;
-    cursor:pointer;
-    position:relative;
-    z-index:9;
+
+/* Lines between li */
+#menu ul.menu li div ul
+{
+  padding-bottom: 8px;
 }
-*+html #menu li a { padding-top:12px; }
-* html #menu li a { padding-top:10px; }
-#menu li.current a,
-#menu li a:hover { background:url(images/base-select.gif) no-repeat -163px 0; }
-#menu li span {
-    line-height:14px;
-    padding:0 19px 11px 17px;
-    display:block;
+
+#menu ul.menu li div ul li:first-child
+{
+  border-top-width: 0px;
 }
-*+html #menu li span { padding-bottom:10px; }
-* html #menu li span {
-    height:24px;
-    padding-bottom:2px;
+
+
+/* Menu logic */
+#menu li>div { visibility: hidden; }
+#menu li:hover>div { visibility: visible; }
+/* */
+
+/* Hover Effect on Submenus */
+#menu ul.menu ul li:hover
+{
+  background-color: #fff;
 }
-#menu li.current a span,
-#menu li a:hover span { background:url(images/base-select.gif) no-repeat 5px bottom; }
-#menu li a:hover span { color:#852a21; }
-#menu li a.parent:hover span { background:url(images/base-select.gif) no-repeat -331px bottom; }
-#menu.js-active li.current a,
-#menu.js-active li.current a span,
-#menu.js-active li a:hover,
-#menu.js-active li a:hover span { background-image:url(images/pix.gif); }
-#menu li a.parent span, #menu.js-active li a.parent span { background:url(images/base-select.gif) no-repeat -499px bottom; }
-#menu li.current li a,
-#menu li.current li a span { background-image:url(images/pix.gif); }
-#menu li li { border:0; }
-#menu li li a span { color:#852a21; }
-#menu li li a.parent span, #menu.js-active li li a.parent span { background:url(images/sub-select.gif) no-repeat -520px bottom; }
-#menu li li a:hover, #menu.js-active li li a:hover { background:url(images/sub-select.gif) no-repeat -170px 0; }
-#menu li li a:hover span,
-#menu.js-active li li a:hover span {
-    background:url(images/sub-select.gif) no-repeat 5px bottom;
-    color:#fff;
+
+/* Lines between li */
+#menu ul.menu li div ul li
+{
+  background-image:url(images/hr.gif);
+  background-repeat: repeat-x;
+  background-position: left bottom;
 }
-#menu li li a.parent:hover span, #menu.js-active li li a.parent:hover span { background:url(images/sub-select.gif) no-repeat -345px bottom; }
-#menu li.back {
-    width:170px;
-    z-index:8;
-    position:absolute;
-    background:url(images/lavalamp.gif) no-repeat 5px bottom;
+#menu ul.menu ul a.parent {
+  background: url(images/arrow.gif) no-repeat right center;
+  margin-right: -1px;
 }
-#menu li.back .left {
-    width:170px;
-    float:none;
-    position:relative;
-    top:0;
-    left:0;
-    height:7px;
-    overflow:hidden;
-    padding:0;
-    margin:0;
-    visibility:visible;
-    background:url(images/lavalamp.gif) no-repeat -163px 0;
-} 
+
+
+/* ie7 */
+#menu ul.menu li {
+  *zoom: 1;
+  *display: inline;
+}
+
+#menu ul.menu li a {
+  *zoom: 1;
+  *display: inline;
+}
+
+#menu ul.menu li a span {
+  *zoom: 1;
+  *display: inline;
+}
+
+/* IE6 */
+#menu ul.menu li a {
+  _background-image: url("images/item.gif");
+}
+
+#menu ul.menu li a span {
+  _background-image: url("images/item.gif");
+}
+
+#menu ul.menu li div { 
+  _background-image: url("images/submenu-top.gif");
+}
+
+#menu ul.menu li div ul { 
+  _background-image: url("images/submenu-bottom.gif");
+}
+
+#menu ul.menu li a:hover {
+  _background-position: left -54px;
+}
+
+#menu ul.menu li a:hover span {
+  _background-position: right -81px;
+  _color: #EB2E83;
+}
+#menu ul.menu li li a:hover span {
+  _color:#EB2E83; 
+}
+
+/* Menu logic for IE6 */
+#menu div { _display: none; }
+#menu div li:hover div { _visibility: visible;_display: block; }
+#menu div li:hover li:hover div { _display: block; }
+#menu div li:hover li:hover li:hover div { _display: block; }
+/* */

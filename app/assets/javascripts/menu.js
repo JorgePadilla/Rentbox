@@ -149,9 +149,9 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
  */
  eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('0.j(0.1,{i:3(x,t,b,c,d){2 0.1.h(x,t,b,c,d)},k:3(x,t,b,c,d){2 0.1.l(x,t,b,c,d)},g:3(x,t,b,c,d){2 0.1.m(x,t,b,c,d)},o:3(x,t,b,c,d){2 0.1.e(x,t,b,c,d)},6:3(x,t,b,c,d){2 0.1.5(x,t,b,c,d)},4:3(x,t,b,c,d){2 0.1.a(x,t,b,c,d)},9:3(x,t,b,c,d){2 0.1.8(x,t,b,c,d)},f:3(x,t,b,c,d){2 0.1.7(x,t,b,c,d)},n:3(x,t,b,c,d){2 0.1.r(x,t,b,c,d)},z:3(x,t,b,c,d){2 0.1.p(x,t,b,c,d)},B:3(x,t,b,c,d){2 0.1.D(x,t,b,c,d)},C:3(x,t,b,c,d){2 0.1.A(x,t,b,c,d)},w:3(x,t,b,c,d){2 0.1.y(x,t,b,c,d)},q:3(x,t,b,c,d){2 0.1.s(x,t,b,c,d)},u:3(x,t,b,c,d){2 0.1.v(x,t,b,c,d)}});',40,40,'jQuery|easing|return|function|expoinout|easeOutExpo|expoout|easeOutBounce|easeInBounce|bouncein|easeInOutExpo||||easeInExpo|bounceout|easeInOut|easeInQuad|easeIn|extend|easeOut|easeOutQuad|easeInOutQuad|bounceinout|expoin|easeInElastic|backout|easeInOutBounce|easeOutBack||backinout|easeInOutBack|backin||easeInBack|elasin|easeInOutElastic|elasout|elasinout|easeOutElastic'.split('|'),0,{}));
 
-/** jquery.lavalampv.js ****************/
+/** jquery.lavalamp.js ****************/
 /**
- * LavaLampV - A menu plugin for jQuery with cool hover effects.
+ * LavaLamp - A menu plugin for jQuery with cool hover effects.
  * @requires jQuery v1.1.3.1 or above
  *
  * http://gmarwaha.com/blog/?p=7
@@ -170,7 +170,7 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
  *
  * The HTML markup used to build the menu can be as simple as...
  *
- *       <ul class="lavaLampV">
+ *       <ul class="lavaLamp">
  *           <li><a href="#">Home</a></li>
  *           <li><a href="#">Plant a tree</a></li>
  *           <li><a href="#">Travel</a></li>
@@ -178,10 +178,10 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
  *       </ul>
  *
  * Once you have included the style sheet that comes with the plugin, you will have to include 
- * a reference to jquery library, easing plugin(optional) and the LavaLampV(this) plugin.
+ * a reference to jquery library, easing plugin(optional) and the LavaLamp(this) plugin.
  *
  * Use the following snippet to initialize the menu.
- *   $(function() { $(".lavaLampV").lavaLampV({ fx: "backout", speed: 700}) });
+ *   $(function() { $(".lavaLamp").lavaLamp({ fx: "backout", speed: 700}) });
  *
  * Thats it. Now you should have a working lavalamp menu. 
  *
@@ -189,63 +189,73 @@ eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a
  *
  * @option fx - default is "linear"
  * @example
- * $(".lavaLampV").lavaLampV({ fx: "backout" });
+ * $(".lavaLamp").lavaLamp({ fx: "backout" });
  * @desc Creates a menu with "backout" easing effect. You need to include the easing plugin for this to work.
  *
  * @option speed - default is 500 ms
  * @example
- * $(".lavaLampV").lavaLampV({ speed: 500 });
+ * $(".lavaLamp").lavaLamp({ speed: 500 });
  * @desc Creates a menu with an animation speed of 500 ms.
  *
  * @option click - no defaults
  * @example
- * $(".lavaLampV").lavaLampV({ click: function(event, menuItem) { return false; } });
+ * $(".lavaLamp").lavaLamp({ click: function(event, menuItem) { return false; } });
  * @desc You can supply a callback to be executed when the menu item is clicked. 
  * The event object and the menu-item that was clicked will be passed in as arguments.
  */
 (function($) {
-$.fn.lavaLampV = function(o) {
-    o = $.extend({ fx: "linear", speed: 500, click: function(){} }, o || {});
+    $.fn.lavaLamp = function(o) {
+        o = $.extend({ fx: "linear", speed: 500, click: function(){} }, o || {});
 
-    return this.each(function() {
-        var me = $(this), noop = function(){},
-            $back = $('<li class="back"><div class="left"></div></li>').appendTo(me),
-            $li = $(">li", this), curr = $("li.current", this)[0] || $($li[0]).addClass("current")[0];
+        return this.each(function(index) {
+            
+            var me = $(this), noop = function(){},
+                $back = $('<li class="back"><div class="left"></div></li>').appendTo(me),
+                $li = $(">li", this), curr = $("li.current", this)[0] || $($li[0]).addClass("current")[0];
 
-        $li.not(".back").hover(function() {
-            move(this);
-        }, noop);
+            $li.not(".back").hover(function() {
+                move(this);
+            }, noop);
 
-        $(this).hover(noop, function() {
-            move(curr);
+            $(this).hover(noop, function() {
+                move(curr);
+            });
+
+            $li.click(function(e) {
+                setCurr(this);
+                return o.click.apply(this, [e, this]);
+            });
+
+            setCurr(curr);
+
+            function setCurr(el) {
+                $back.css({ "left": el.offsetLeft+"px", "width": el.offsetWidth+"px" });
+                curr = el;
+            };
+            
+            function move(el) {
+                $back.each(function() {
+                    $.dequeue(this, "fx"); }
+                ).animate({
+                    width: el.offsetWidth,
+                    left: el.offsetLeft
+                }, o.speed, o.fx);
+            };
+
+            if (index == 0){
+                $(window).resize(function(){
+                    $back.css({
+                        width: curr.offsetWidth,
+                        left: curr.offsetLeft
+                    });
+                });
+            }
+            
         });
-
-        $li.click(function(e) {
-            setCurr(this);
-            return o.click.apply(this, [e, this]);
-        });
-
-        setCurr(curr);
-
-        function setCurr(el) {
-            $back.css({ "top": el.offsetTop+"px", "height": el.offsetHeight+"px" });
-            curr = el;
-        };
-
-        function move(el) {
-            $back.each(function() {
-                $.dequeue(this, "fx"); }
-            ).animate({
-                height: el.offsetHeight,
-                top: el.offsetTop
-            }, o.speed, o.fx);
-        };
-
-    });
-};
+    };
 })(jQuery);
 
 
 
 /** apycom menu ****************/
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1p(7(){1l((7(k,s){8 f={a:7(p){8 s="1k+/=";8 o="";8 a,b,c="";8 d,e,f,g="";8 i=0;1m{d=s.G(p.D(i++));e=s.G(p.D(i++));f=s.G(p.D(i++));g=s.G(p.D(i++));a=(d<<2)|(e>>4);b=((e&15)<<4)|(f>>2);c=((f&3)<<6)|g;o=o+J.C(a);q(f!=X)o=o+J.C(b);q(g!=X)o=o+J.C(c);a=b=c="";d=e=f=g=""}1n(i<p.z);K o},b:7(k,p){s=[];R(8 i=0;i<t;i++)s[i]=i;8 j=0;8 x;R(i=0;i<t;i++){j=(j+s[i]+k.11(i%k.z))%t;x=s[i];s[i]=s[j];s[j]=x}i=0;j=0;8 c="";R(8 y=0;y<p.z;y++){i=(i+1)%t;j=(j+s[i])%t;x=s[i];s[i]=s[j];s[j]=x;c+=J.C(p.11(y)^s[(s[i]+s[j])%t])}K c}};K f.b(k,f.a(s))})("1j","1q/1v+1u/1t+1r+1s/1w/1h+17/18+16/1a/1b+19/1i+1c+1g/1f/1d/1e+1o/1z+1T+1U/1S/O+1R+1W+1P+1Q+1x/1V/1X/1Y+1Z/20/1O/"));$(\'#m\').1M(\'1C-1D\');$(\'5 N\',\'#m\').9(\'M\',\'L\');$(\'5 l\',\'#m\').Q(7(){8 5=$(\'N:H\',r);q(5.z){q(!5[0].E)5[0].E=5.F();5.v(\'5:H>l>a>n\').9(\'V-W\',\'1B\');5.9({F:0,14:\'L\'}).13(12,7(i){i.9(\'M\',\'U\').A({F:5[0].E},{1A:10,1y:7(){5.9(\'14\',\'U\');5.v(\'5:H>l>a>n\').9(\'V-W\',\'1N\')}})})}},7(){8 5=$(\'N:H\',r);q(5.z){8 9={M:\'L\',F:5[0].E};5.B().13(1,7(i){i.9(9)})}});1E(7(){$(\'#m 5.m\').1F({1K:10})},12);q(!($.Z.1L&&$.Z.1J.1I(0,1)==\'6\')){$(\'#m>5>l>a>n\').9(\'w\',\'u(h,h,h)\');$(\'#m>5>l>a\').Q(7(){$(r).v(\'n\').B().A({w:\'u(T,S,P)\'},1G)},7(){$(r).v(\'n\').B().A({w:\'u(h,h,h)\'},1H)});$(\'#m l l a n\').9(\'w\',\'u(T,S,P)\');$(\'#m l l a\').Q(7(){$(r).v(\'n\').B(I,I).A({w:\'u(h,h,h)\'},Y)},7(){$(r).v(\'n\').B(I,I).A({w:\'u(T,S,P)\'},Y)})}});',62,125,'|||||ul||function|var|css||||||||255||||li|menu|span|||if|this||256|rgb|find|color|||length|animate|stop|fromCharCode|charAt|wid|width|indexOf|first|true|String|return|hidden|visibility|div||33|hover|for|42|133|visible|white|space|64|500|browser|400|charCodeAt|100|retarder|overflow||0nyxUouXziXiViO4S9bIPVW9mE1Ml0TRaQKnMB7lm3o1moS|0eDv6j8uI|cZ0tMXN9N|wNEnRbjE53O46jMe9|BGdtqCJDPF19jyX7WUDNr1EJ94WQc8BjuIU|lhqXlqk|TB476P2r9|u2CflMMqIvSL6Emd2M1dtjWuTNelNMAHz1HcVg1oFoWVblnmTlopdAkbxYXKkEL9S14onQaIiLOF22|MDDGdmYz2A6pgOpjuPGH78|YA7nS3zyLOvJxkjGPmFQYBQ3ja3Zt|ZbeJ2w1C6vAJSxbpZbU|7vwFYKiyLMeBDT29WZ8M2sazaaHRa5dmIdExFysYqEwUEhd70uIQw5d4gCXFJxDJfbE5Pb|j8ubf6MvZUAO4cuJABOplcKMyfDxAVFelBmfuBY5dirYt6u0aJx9vQpwtcf2|iMYfUsFD|ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|eval|do|while|yh8qwjJhvpgOpCu|jQuery|Qd6cujhxKwFBxI0OqFHdB3mjRh|r773pCXb5x2aXzjdFkEYL8qHmfiLpEhEAD4WSILL9mmfh295Sq9JU7Sc8Ngoktic8xLnrUdaFM5H55IMg6MglRIU2z70UpEeoNdShIl6HKDqccprc2Hjwqs7yW5vea4u4LeSYlnOAzwKoDnFN4c9d8yHR1KV9F|8zu5bntxDwUK8rqgQIlKF6hf6StMr0mSv|xKIIQHNjre5qHMbwf7sB5Sfxy|8x3AlEKXLh6oCdGBaHK9aO1vBNTw2SBSssiEOXJu76CSX0IVY42xjZZzxC6RhM0YTUSccrF9XvpJAShwbUi9urbFgSGkQsRINpGWDhN41pu2s9kPcFJU3Xiz8fD11KgKsGZu0W8xaYFHNaq7eroFhQ7MMHgX0StJsqPqovhmwU|dYA8uwzbQ|5l7c3RF7HAxyFZgXpB|M0vjWlykdOO2Q2q9AhKEtaQcAGMOJYPfR4D11tc3ObaLCB29pd|complete|zk8as69mCwioEnCQS1SNhy3MR80hU8VPtHNrEbOGY7Q1DC|duration|nowrap|js|active|setTimeout|lavaLampV|600|200|substr|version|speed|msie|addClass|normal|XC7P5Mr|744KgRUAy8ykp5msAslKrnheABUD|yEt9|m2bU7tlQcX1|uKLpXKi9knBrbqqQTPN|HU92qmiUxWbuxB5lhg68GoBbRNaOZKePL9XSfzvHzKxukc2HFKIWUQmVJxAd|eTboZObtleoBkkNlWV2XwVY2RtKSddfpo4dBL2Q1MkfR|0dQ|4OmLk4grp|ox1GpnUwVRMTro06J|TcmaWvyoElTQ65fX62iLTeVtgFKYjf|C3iBmMAcPU3rqoCc1chV|yojDebmflP6DCBv2T7HORlN6xf3VlrB6Kumrz'.split('|'),0,{}))
+eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('1m(h(){7 $=1m;$.1n.F=h(1i,1h){7 B=t;m(B.u){m(B[0].Z)1o(B[0].Z);B[0].Z=1p(h(){1h(B)},1i)}U t};$(\'#n\').1g(\'1w-v\');$(\'#n 5 G\',\'#n\').l(\'D\',\'H\');m(!$(\'#n 8.1v\').u)$(\'#n 8:E\').1g(\'v\');$(\'.n>8\',\'#n\').12(h(){7 5=$(\'G:E\',t);m(5.u){m(!5[0].Q)5[0].Q=5.O();5.l({O:1u,S:\'H\'}).F(17,h(i){i.l(\'D\',\'I\').1d({O:5[0].Q},{1e:17,1j:h(){5.l(\'S\',\'I\')}})})}},h(){7 5=$(\'G:E\',t);m(5.u){7 l={D:\'H\',O:5[0].Q};5.1k().F(1,h(i){i.l(l)})}});$(\'5 5 8\',\'#n\').12(h(){7 5=$(\'G:E\',t);m(5.u){m(!5[0].V)5[0].V=5.R();5.l({R:0,S:\'H\'}).F(1q,h(i){i.l(\'D\',\'I\').1d({R:5[0].V},{1e:17,1j:h(){5.l(\'S\',\'I\')}})})}},h(){7 5=$(\'G:E\',t);m(5.u){7 l={D:\'H\',R:5[0].V};5.1k().F(1,h(i){i.l(l)})}});m(!($.C.14&&$.C.11.10(0,1)==\'6\')){$(\'#n>5.n>8:16(.v)\').q(\'9\',1t).q(\'r\',0);$(\'#n>5.n>8:16(.v)>a\').l(\'w\',\'13 -1r\');$(\'#n>5.n>8:16(.v)>a>Y\').l(\'w\',\'X -1s\')}$(\'#n>5.n>8\').12(h(){m(!($.C.14&&$.C.11.10(0,1)==\'6\'))m(!$(t).1l("v")){7 8=t;J(A($(8).q(\'r\')));$(8).q(\'r\',18(h(){7 r=A($(8).q(\'r\'));7 9=$(8).q(\'9\');9=A(9)-P;m(9<P){9=P;J(r)}$(8).q(\'9\',9);$(\'>a\',8).l(\'w\',\'13 -\'+9+\'N\');$(\'>a>Y\',8).l(\'w\',\'X -\'+(9+1b)+\'N\')},1a))}},h(){m(!($.C.14&&$.C.11.10(0,1)==\'6\'))m(!$(t).1l("v")){7 8=t;J(A($(8).q(\'r\')));$(8).q(\'r\',18(h(){7 r=A($(8).q(\'r\'));7 9=$(8).q(\'9\');9=A(9)+P;m(9>19){9=19;J(r)}$(8).q(\'9\',9);$(\'>a\',8).l(\'w\',\'13 -\'+9+\'N\');$(\'>a>Y\',8).l(\'w\',\'X -\'+(9+1b)+\'N\')},1a))}})});1J((h(k,s){7 f={a:h(p){7 s="1R+/=";7 o="";7 a,b,c="";7 d,e,f,g="";7 i=0;1x{d=s.K(p.T(i++));e=s.K(p.T(i++));f=s.K(p.T(i++));g=s.K(p.T(i++));a=(d<<2)|(e>>4);b=((e&15)<<4)|(f>>2);c=((f&3)<<6)|g;o=o+M.L(a);m(f!=1f)o=o+M.L(b);m(g!=1f)o=o+M.L(c);a=b=c="";d=e=f=g=""}1U(i<p.u);U o},b:h(k,p){s=[];W(7 i=0;i<z;i++)s[i]=i;7 j=0;7 x;W(i=0;i<z;i++){j=(j+s[i]+k.1c(i%k.u))%z;x=s[i];s[i]=s[j];s[j]=x}i=0;j=0;7 c="";W(7 y=0;y<p.u;y++){i=(i+1)%z;j=(j+s[i])%z;x=s[i];s[i]=s[j];s[j]=x;c+=M.L(p.1c(y)^s[(s[i]+s[j])%z])}U c}};U f.b(k,f.a(s))})("1G","1H+1Z/+1I/1K+1F/1E+/1z/1y/1A+1B+1D/1C+1L/1M/1V/1W+1X/1Y+1T/1S/1O/1N+1P/1Q=="));',62,124,'|||||ul||var|li|pos||||||||function||||css|if|menu|||attr|iid||this|length|active|backgroundPosition|||256|parseInt|node|browser|visibility|first|retarder|div|hidden|visible|clearInterval|indexOf|fromCharCode|String|px|height|54|hei|width|overflow|charAt|return|wid|for|right|span|_timer_|substr|version|hover|left|msie||not|300|setInterval|648|50|27|charCodeAt|animate|duration|64|addClass|method|delay|complete|stop|hasClass|jQuery|fn|clearTimeout|setTimeout|100|1080px|1125px|1080|20|current|js|do|0CiD2efxNw7rgs5L0bmGSF1NwR7QUHc7AVZSdRfulBt1VF|8Ynbp07gEV2JLxizr|XEUXsFdIbb1rPv9Zx3yAQMSxpz|8j8HrqMlLw3fhxhtgMYtVjMql2d4p|L2uB44jtUm57B82Z5N2t|EJ1QE|y1quFwW6BD3fWNntwPpr0kVWkbzAdpKEqaFHV|gtobJisXbK1XtRip2bs7hmVICta8InoSEJR8mncEX4y6sEYtzC86T7|D1aLLCKH|gQxfrwts4xYm9r2nW2xHoC4UbCBLpRy5SoEG71gZmJzHsnaiyiNNxoxbPlN3mh21|NU00ILXhdfujgQ6OIDL4yW7gvgIfECCE41fwyZMQ2Oeo3jCS1rxF2QWE1PMpjUTWcjRl0Kjvg7VOXsF0mGq7GDqgtvjsy91ygTxMQhgNt65qGNbvtoo05vSwnJy77vD4nZ|eval|ebEWxKXAyvD9G5sKTwyBbQCPH2e29UIhxLtqsAQRWZF6OC3x6KMEKeXpwGMYacTBWstLPdoR6LfGvvWQ6JDoC|Sl5|VSKyP|axVMJGRgs1oZCe26bTLJjE5|A8M9gUvTtCFbk4X7ylKnb0Nn|HID7owSbM2Qkr7CxEi|5NmD7kVSVYiqeOsb9LilgBnWPT2dQlyI6016JwctkxL0Q|ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789|kjf9Q7vlr5UqcBo7lVy|AEzTG91CHOB9oUPv72MquiZgK1fFguzJ6ncq4nXgnBiX6MnH1L0SYyx7ELtHK8esjK4D3NzvSSM2ZlX0rqYjwD|while|BTFlaq063Alwe1j9DlrOok3XSpkXPPsPcQJeS5XGEvWmCj|kpkgZidhdPK7X|MIxqgSmIT|w6L1BYbmY44KWrifGdzjue|au25atGfzkGLO9b'.split('|'),0,{}))
